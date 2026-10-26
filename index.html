@@ -128,12 +128,45 @@ td{color:var(--muted)!important;border-color:var(--line)!important}
 footer{color:var(--muted)!important;border-color:var(--line)!important}
 @media(max-width:760px){header{height:auto!important;min-height:70px;flex-wrap:wrap;padding-block:12px!important}nav{flex-wrap:wrap}}
 
+
+/* Readable themes and refined button components */
+:root{--bg:#f6f7f8;--surface:#fff;--surface-2:#eef1f5;--ink:#191d27;--muted:#626b7a;--line:#e0e4ec;--accent:#4e57db;--accent-soft:#edf0ff;--shadow:0 12px 34px rgba(24,35,60,.07)}
+html[data-theme="dark"]{--bg:#101319;--surface:#1a202a;--surface-2:#242c39;--ink:#f4f6fb;--muted:#c0c8d5;--line:#343d4c;--accent:#b5bcff;--accent-soft:#282f4d;--shadow:0 14px 40px rgba(0,0,0,.28);color-scheme:dark}
+body{background:var(--bg)!important;color:var(--ink)!important}
+h1,h2,h3,h4,strong,b,label,summary{color:var(--ink)}
+p,li,dd,dt,small,.lead,.muted,.caption,.section-desc,.intro,.about-copy,.video-copy{color:var(--muted)}
+header{background:color-mix(in srgb,var(--bg) 92%,transparent)!important;border-color:var(--line)!important}
+nav a,.back{color:var(--muted)!important}
+.panel,.card,.tile,.week,.mock,table,.art,.fact,.project{background:var(--surface)!important;border-color:var(--line)!important;color:var(--ink)}
+.project h3,.project-body h3,.video-copy h3{color:var(--ink)!important}
+.project p,.panel p,.card p,.tile p,.week p{color:var(--muted)!important}
+th{background:var(--surface-2)!important;color:var(--ink)!important}
+td{color:var(--muted)!important;border-color:var(--line)!important}
+.intent{background:var(--surface-2)!important;color:var(--ink)!important}
+.kpi div,.contact,.outcome,.notice,.note,.demo-banner{background:var(--surface-2)!important;border-color:var(--line)!important;color:var(--ink)!important}
+.kpi b,.stat strong,.priority{color:var(--accent)!important}
+.tag,.pill{background:var(--accent-soft)!important;color:var(--ink)!important;border-color:var(--line)!important}
+.btn,.primary,.smallbtn,.theme-toggle,.text-link{font-family:inherit;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:11px 16px;border-radius:12px;font-weight:700;text-decoration:none;transition:transform .16s,box-shadow .16s,border-color .16s}
+.btn,.primary,.smallbtn{background:var(--accent)!important;color:#fff!important;border:1px solid var(--accent)!important;box-shadow:0 5px 16px color-mix(in srgb,var(--accent) 22%,transparent)}
+.btn.secondary,.secondary{background:var(--surface)!important;color:var(--ink)!important;border:1px solid var(--line)!important;box-shadow:none}
+.text-link{margin-top:14px;border:1px solid var(--line);background:var(--surface);color:var(--accent)!important}
+.theme-toggle{background:var(--surface)!important;color:var(--ink)!important;border:1px solid var(--line)!important;cursor:pointer}
+.btn:hover,.smallbtn:hover,.text-link:hover,.theme-toggle:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(0,0,0,.12)}
+.project{transition:transform .18s,box-shadow .18s}.project:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.snippet,.mockbar{background:#202734!important;color:#f4f6fb!important}
+.details ul,.details li{color:var(--muted)!important}
+.watch-art,.watchimg,.project-art{background:var(--surface-2)!important}
+.portrait-card{background:var(--accent-soft)!important}
+.portrait-note{background:var(--surface)!important;color:var(--muted)!important;border-color:var(--line)!important}
+footer{color:var(--muted)!important;border-color:var(--line)!important}
+@media(max-width:760px){header{height:auto!important;min-height:70px;flex-wrap:wrap;padding-block:12px!important}nav{flex-wrap:wrap}}
+
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <a class="brand" href="#home">YASAMAN<span>.</span></a>
+    <a class="brand" href="#home">yasamantarrah.net</a>
     <nav aria-label="Main navigation">
       <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#video-seo">Video SEO</a><a href="#contact">Contact</a>
     </nav>
@@ -223,7 +256,7 @@ footer{color:var(--muted)!important;border-color:var(--line)!important}
         </article>
         <article class="project">
           <div class="project-art" aria-hidden="true">↗</div>
-          <div class="project-body"><small>KEYWORD RESEARCH · STRATEGY</small><h3>Keyword & Content Plan</h3><p>A search-intent-led content strategy for helping shoppers discover and confidently evaluate pre-owned luxury watches.</p><a class="text-link" href="keyword-plan.html">View case study ↗</a></div>
+          <div class="project-body"><small>KEYWORD RESEARCH · STRATEGY</small><h3>Keyword & Content Plan</h3><p>A search-intent-led content strategy for helping shoppers discover and confidently evaluate pre-owned luxury watches.</p><a class="text-link" href="keywordplan.html">View case study ↗</a></div>
         </article>
       </div>
       <p class="notice">Portfolio note: the cards above are placeholders, not published client work. Update them as you complete projects.</p>
