@@ -1,1 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Luxury e-commerce landing page concept and conversion strategy for fictional vintage watch retailer Maison Seconde, by Yasaman Tarrah.">
+<title>Luxury E-commerce Landing Page | Yasaman Tarrah</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#22251f;--muted:#686e67;--paper:#f7f6f0;--green:#344b3d;--line:#e1e3da;--gold:#a27b45;--cream:#ebe8dd}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.65}a{color:inherit}.wrap{width:min(1080px,calc(100% - 38px));margin:auto}
+header{height:72px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);font-size:.9rem}.brand{font-weight:700;letter-spacing:.04em;text-decoration:none}.brand span{color:var(--gold)}.back{color:var(--green);font-weight:600;text-decoration:none}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:42px;align-items:center;padding:70px 0}.eyebrow{font-size:.74rem;letter-spacing:.15em;text-transform:uppercase;font-weight:700;color:var(--gold)}
+h1,h2,h3,p{margin-top:0}h1{font:700 clamp(2.6rem,5.5vw,4.8rem)/1.04 "Playfair Display",serif;letter-spacing:-.04em;margin:16px 0 20px}h2{font:700 clamp(1.9rem,4vw,2.7rem)/1.15 "Playfair Display",serif;margin:9px 0 18px}h3{font-size:1.08rem;margin-bottom:8px}.lead{font-size:1.08rem;color:var(--muted)}.actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:25px}.btn{padding:12px 18px;border-radius:999px;text-decoration:none;font-weight:700;font-size:.9rem}.primary{background:var(--green);color:#fff}.secondary{border:1px solid #bbc4b9}.art{border-radius:20px;overflow:hidden;background:#e8e4d8}.art img{width:100%;display:block;object-fit:cover;aspect-ratio:4/3}.caption{font-size:.77rem;color:var(--muted);padding:10px 13px}
+.notice{border:1px solid #e5d7b9;background:#fbf4e8;color:#6c5127;border-radius:12px;padding:14px 16px;font-size:.88rem}
+section{padding:48px 0;border-top:1px solid var(--line)}.muted{color:var(--muted)}.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}.panel{background:white;border:1px solid var(--line);border-radius:16px;padding:22px}.panel ul{padding-left:19px;margin-bottom:0}.panel li{margin:7px 0}.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.tile{padding:18px;border:1px solid var(--line);background:#fff;border-radius:14px}.tile b{color:var(--gold);font-size:.75rem;letter-spacing:.1em}.tile p{font-size:.9rem;color:var(--muted);margin-bottom:0}
+.mock{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden}.mockbar{padding:14px 18px;background:#344b3d;color:white;display:flex;justify-content:space-between;font-size:.8rem}.mockbody{padding:24px}.productrow{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:center}.watchimg{background:#eae7dc;border-radius:14px;padding:12px}.watchimg img{display:block;width:100%;border-radius:8px;aspect-ratio:4/3;object-fit:cover}.details ul{padding-left:18px;color:var(--muted);font-size:.88rem}.smallbtn{display:inline-block;margin-top:6px;padding:10px 14px;border-radius:99px;background:var(--green);color:#fff;text-decoration:none;font-size:.82rem;font-weight:700}
+footer{display:flex;justify-content:space-between;gap:12px;padding:25px 0;color:var(--muted);font-size:.82rem}
+@media(max-width:720px){.hero,.two,.productrow{grid-template-columns:1fr}.flow{grid-template-columns:1fr 1fr}.hero{padding:45px 0}.art{max-width:560px}section{padding:36px 0}}
+@media(max-width:460px){.flow{grid-template-columns:1fr}.mockbody{padding:14px}}
 
+/* Modern minimal design system + theme support */
+:root{
+ --bg:#f6f7f8;--surface:#ffffff;--surface-2:#eef1f3;--ink:#171a1f;
+ --muted:#68717d;--line:#e2e6ea;--accent:#5b62e8;--accent-soft:#eeefff;
+ --shadow:0 16px 50px rgba(25,35,50,.055);--radius:20px;color-scheme:light;
+}
+html[data-theme="dark"]{
+ --bg:#101216;--surface:#181b21;--surface-2:#20242c;--ink:#f3f4f6;
+ --muted:#a0a8b5;--line:#2b303a;--accent:#a5aaff;--accent-soft:#282b49;
+ --shadow:0 18px 55px rgba(0,0,0,.22);color-scheme:dark;
+}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{background:var(--bg)!important;color:var(--ink)!important;font-family:Inter,"DM Sans",system-ui,-apple-system,sans-serif!important;line-height:1.7;transition:background .22s,color .22s}
+a{color:inherit}
+.wrap{width:min(1120px,calc(100% - 44px));margin-inline:auto}
+header{position:sticky;top:0;z-index:20;gap:16px;padding-inline:max(22px,calc((100% - 1120px)/2));height:72px;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)!important}
+.brand{font-weight:750;letter-spacing:-.035em;text-decoration:none;color:var(--ink)!important}
+.brand span{color:var(--accent)!important}
+nav{gap:22px;align-items:center}
+nav a,.back{color:var(--muted)!important;transition:color .15s}
+nav a:hover,.back:hover{color:var(--accent)!important}
+.theme-toggle{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:9px 13px;font:600 .82rem inherit;cursor:pointer;white-space:nowrap}
+.theme-toggle:hover{border-color:var(--accent)}
+.hero{padding-top:clamp(52px,8vw,104px)!important;padding-bottom:clamp(48px,7vw,88px)!important}
+.eyebrow{color:var(--accent)!important;font-size:.72rem!important;letter-spacing:.13em!important}
+h1,h2,h3{font-family:Inter,"DM Sans",system-ui,sans-serif!important;color:var(--ink);letter-spacing:-.055em!important}
+h1{font-weight:720!important;line-height:1.02!important}
+h2{font-weight:680!important;line-height:1.12!important}
+h3{font-weight:650!important;letter-spacing:-.025em!important}
+p,.lead,.muted,.caption{color:var(--muted)}
+section{border-color:var(--line)!important}
+.panel,.card,.tile,.week,.mock,table,.art{background:var(--surface)!important;border-color:var(--line)!important;box-shadow:var(--shadow)}
+.panel,.card,.tile,.week{border-radius:var(--radius)!important}
+.panel p,.card p,.tile p,.week p{color:var(--muted)}
+th{background:var(--surface-2)!important;color:var(--ink)!important}
+td{border-color:var(--line)!important}
+.intent{background:var(--surface-2)!important;color:var(--muted)!important}
+.kpi div{background:var(--accent-soft)!important}
+.kpi b{color:var(--accent)!important}
+.btn,.primary,.smallbtn{background:var(--accent)!important;color:white!important;border:1px solid var(--accent)!important}
+.secondary{border:1px solid var(--line)!important;background:var(--surface)!important;color:var(--ink)!important}
+.notice,.note{background:var(--accent-soft)!important;border-color:color-mix(in srgb,var(--accent) 30%,var(--line))!important;color:var(--ink)!important}
+.mockbar{background:var(--surface-2)!important;color:var(--ink)!important;border-bottom:1px solid var(--line)}
+footer{border-top:1px solid var(--line);margin-top:32px;color:var(--muted)}
+img{max-width:100%}
+::selection{background:var(--accent-soft)}
+@media(max-width:720px){
+ header{height:auto;min-height:68px;flex-wrap:wrap;padding-block:12px}
+ nav{gap:14px;flex-wrap:wrap}
+ .theme-toggle{padding:8px 10px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+
+</style>
+</head>
+<body><div class="wrap">
+<header><a class="brand" href="index.html">YASAMAN<span>.</span></a><a class="back" href="index.html#projects">← Back to portfolio</a><button class="theme-toggle" type="button">◐ <span>Dark mode</span></button>
+</header>
+<main>
+<div class="hero">
+<div><div class="eyebrow">Portfolio concept · E-commerce UX</div><h1>Quiet confidence for exceptional finds.</h1>
+<p class="lead">A landing-page direction for Maison Seconde, a fictional independent retailer curating vintage and pre-owned luxury watches. The experience is designed to make discovery feel considered—and purchase decisions feel informed.</p>
+<div class="actions"><a class="btn primary" href="#page-concept">Explore the concept ↓</a><a class="btn secondary" href="keyword-plan.html">View content strategy ↗</a></div>
+</div>
+<div class="art"><img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=1000&q=85" alt="Luxury wristwatch styled for a premium product editorial"><div class="caption">Mood-board image for concept illustration; not inventory photography.</div></div>
+</div>
+<div class="notice"><strong>Portfolio transparency:</strong> Maison Seconde is fictional. This is a design and strategy concept, not a functioning shop, real offer, or claim of affiliation with Rolex or any watch brand. Sample product details and calls to action are illustrative.</div>
+<section id="page-concept"><div class="eyebrow">01 / Landing page concept</div><h2>Design the first impression around buyer questions.</h2>
+<p class="muted">The page should communicate what the retailer offers, why its listings deserve consideration, and how a visitor can take the next step—without overstating authenticity, condition or provenance.</p>
+<div class="mock">
+<div class="mockbar"><b>MAISON SECONDE</b><span>COLLECTIONS　 OUR APPROACH　 JOURNAL</span></div>
+<div class="mockbody">
+<div class="eyebrow">Pre-owned watches · Paris</div><h2 style="margin-top:10px">Character, considered.</h2>
+<p class="muted">Discover thoughtfully presented timepieces, with clear details to support your next decision.</p>
+<div class="productrow">
+<div class="watchimg"><img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=900&q=85" alt="Watch product photography inspiration, illustrative only"></div>
+<div class="details"><span class="eyebrow">A considered collection</span><h3>Explore pre-owned timepieces</h3><p class="muted">Browse the current selection, compare listing details and contact our team with questions.</p><ul><li>Detailed listing information</li><li>Condition and documentation disclosures</li><li>Clear enquiry and buying steps</li></ul><a class="smallbtn" href="#strategy">Browse the collection (concept)</a></div>
+</div>
+</div>
+</div>
+<p class="muted" style="font-size:.8rem;margin-top:9px">Static visual mockup only. The sample collection button is a concept anchor, not a live shopping flow.</p>
+</section>
+<section><div class="eyebrow">02 / Conversion approach</div><h2>Build reassurance into the customer journey.</h2>
+<div class="flow">
+<div class="tile"><b>01 · DISCOVER</b><h3>Clear positioning</h3><p>Define the offer and audience quickly: curated pre-owned watches, transparent listing details.</p></div>
+<div class="tile"><b>02 · EXPLORE</b><h3>Useful navigation</h3><p>Let shoppers filter by brand, model family, price range and availability where supported.</p></div>
+<div class="tile"><b>03 · EVALUATE</b><h3>Evidence, not hype</h3><p>Show condition, reference, included items, provenance and service records only when documented.</p></div>
+<div class="tile"><b>04 · ACT</b><h3>Easy next step</h3><p>Offer clear contact, viewing, delivery, payment and return information before commitment.</p></div>
+</div>
+</section>
+<section id="strategy"><div class="eyebrow">03 / UX & business strategy</div><h2>What the page needs to accomplish</h2>
+<div class="two">
+<div class="panel"><h3>Primary content blocks</h3><ul><li>Brand proposition and curated inventory entry point</li><li>Current, real product cards with availability</li><li>Buying guide: condition, servicing and paperwork</li><li>About the seller, contact and policies</li><li>Editorial stories that answer buyer questions</li></ul></div>
+<div class="panel"><h3>Trust & usability guardrails</h3><ul><li>Use real photographs and accurate item descriptions</li><li>State seller identity and independence clearly</li><li>Explain inspection and authentication process precisely</li><li>Make fees, shipping, returns and warranty understandable</li><li>Optimize mobile speed, accessible contrast and keyboard use</li></ul></div>
+</div>
+</section>
+<section><div class="eyebrow">04 / SEO foundations</div><h2>Connect landing-page copy to search intent.</h2>
+<div class="two">
+<div class="panel"><h3>Sample page title</h3><p><strong>Pre-Owned Luxury Watches in Paris | Maison Seconde</strong></p><p class="muted">Draft only; align to the actual store's assortment and geography.</p></div>
+<div class="panel"><h3>Sample meta description</h3><p class="muted">Explore the current selection of pre-owned luxury watches at Maison Seconde. Review listing details, condition information and ways to enquire.</p></div>
+</div>
+<p class="muted" style="font-size:.85rem;margin-top:12px">Search engines may rewrite snippets. Metadata helps describe the page but does not guarantee rankings or display.</p>
+</section>
+<section><div class="eyebrow">05 / How I would measure it</div><h2>Track meaningful actions—not vanity metrics alone.</h2>
+<div class="two">
+<div class="panel"><h3>Discovery</h3><ul><li>Organic clicks and impressions by landing page</li><li>Queries and device mix</li><li>Engagement with collection and product pages</li></ul></div>
+<div class="panel"><h3>Commercial quality</h3><ul><li>Qualified product enquiries</li><li>Appointment requests or checkout starts, if offered</li><li>Conversion rate and revenue with appropriate analytics</li></ul></div>
+</div>
+</section>
+<section><div class="notice"><strong>Next iteration:</strong> Test this concept with user feedback, then implement a real accessible page using verified inventory, authentic photography, accurate policies and a working contact or commerce flow.</div></section>
+</main>
+<footer><span>© 2026 Yasaman Tarrah · Concept project</span><a class="back" href="index.html#projects">Back to projects ↑</a></footer>
+</div>
+<script>
+(() => {
+  const key = 'yasaman-portfolio-theme';
+  const root = document.documentElement;
+  let saved = null;
+  try { saved = localStorage.getItem(key); } catch(e) {}
+  const initial = saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  root.dataset.theme = initial;
+  function setup(){
+    const button = document.querySelector('.theme-toggle');
+    if(!button) return;
+    const update = () => {
+      const dark = root.dataset.theme === 'dark';
+      button.innerHTML = dark ? '☼ <span>Light mode</span>' : '◐ <span>Dark mode</span>';
+      button.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+      button.setAttribute('aria-pressed', String(dark));
+    };
+    update();
+    button.addEventListener('click', () => {
+      root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+      try { localStorage.setItem(key, root.dataset.theme); } catch(e) {}
+      update();
+    });
+  }
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', setup);
+  else setup();
+})();
+</script>
+
+</body></html>
