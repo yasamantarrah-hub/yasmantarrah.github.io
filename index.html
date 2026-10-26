@@ -292,39 +292,38 @@ footer{color:var(--muted)!important;border-color:var(--line)!important}a:focus-v
           <a class="btn secondary" href="#contact">Get in touch</a>
         </div>
       </div>
-      <div class="portrait-card modern-avatar" aria-label="Modern illustrated portrait avatar">
-        <svg viewBox="0 0 320 380" role="img" aria-label="Modern editorial illustration of a woman with long dark hair, gold earrings and a black top">
-          <defs>
-            <clipPath id="portraitClipModern"><rect width="320" height="380" rx="34"/></clipPath>
-            <linearGradient id="avatarBgModern" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f0edff"/><stop offset="1" stop-color="#dfe5ff"/></linearGradient>
-            <linearGradient id="avatarHairModern" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#24202b"/><stop offset="1" stop-color="#49364a"/></linearGradient>
-            <linearGradient id="avatarSkinModern" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f2c3a8"/><stop offset="1" stop-color="#d9977c"/></linearGradient>
-          </defs>
-          <g clip-path="url(#portraitClipModern)">
-            <rect width="320" height="380" fill="url(#avatarBgModern)"/>
-            <circle cx="260" cy="73" r="49" fill="#c5c8ff" opacity=".8"/>
-            <circle cx="48" cy="286" r="58" fill="#f8d9c6" opacity=".8"/>
-            <path d="M30 380v-44c0-66 45-105 130-105s130 39 130 105v44z" fill="#282634"/>
-            <path d="M77 173C58 95 91 33 160 29c69-4 105 47 88 139l-7 105H78z" fill="url(#avatarHairModern)"/>
-            <path d="M126 222h68v58c-16 21-52 21-68 0z" fill="url(#avatarSkinModern)"/>
-            <path d="M93 139c0-57 29-91 69-91s69 34 69 91v44c0 48-31 80-69 80s-69-32-69-80z" fill="url(#avatarSkinModern)"/>
-            <path d="M89 157C72 94 105 37 163 37c51 0 83 35 79 94-17-6-32-22-41-47-27 21-64 30-101 24-1 19-5 35-11 49z" fill="url(#avatarHairModern)"/>
-            <path d="M95 111c-18 44-14 111 0 157l-20 24c-27-61-26-143-4-193 14-32 43-52 82-58-29 15-46 39-58 70z" fill="#29232f"/>
-            <path d="M224 95c22 45 21 116 7 170l22 24c26-64 24-145-2-192-15-28-41-47-76-53 24 12 40 29 49 51z" fill="#29232f"/>
-            <path d="M117 150q13-9 26 0M177 150q13-9 26 0" fill="none" stroke="#573b38" stroke-width="3.5" stroke-linecap="round"/>
-            <ellipse cx="132" cy="160" rx="4" ry="5" fill="#29212a"/><ellipse cx="190" cy="160" rx="4" ry="5" fill="#29212a"/>
-            <path d="M160 163l-5 21q5 4 11 0" fill="none" stroke="#c27e68" stroke-width="2.5" stroke-linecap="round"/>
-            <path d="M143 198q17 12 35 0" fill="none" stroke="#9f4d5e" stroke-width="3.5" stroke-linecap="round"/>
-            <ellipse cx="113" cy="183" rx="12" ry="6" fill="#e88d91" opacity=".32"/><ellipse cx="207" cy="183" rx="12" ry="6" fill="#e88d91" opacity=".32"/>
-            <path d="M104 263l35-17 21 21 21-21 35 17 38 117H66z" fill="#f8f7fb"/>
-            <path d="M139 246l21 21-18 29-22-33zM181 246l-21 21 18 29 22-33z" fill="#d7d7ee"/>
-            <path d="M160 267v113" stroke="#d7d7ee" stroke-width="2"/>
-            <circle cx="99" cy="194" r="5" fill="#d6ad65"/><circle cx="221" cy="194" r="5" fill="#d6ad65"/>
-            <path d="M99 199v16M221 199v16" stroke="#d6ad65" stroke-width="2"/>
+      <div class="portrait-card" aria-label="Illustrated girl avatar">
+        <!-- Self-contained avatar illustration. Replace this SVG with your own photo whenever you like. -->
+        <svg viewBox="0 0 320 380" role="img" aria-label="Stylized portrait avatar of a woman with long dark hair">
+          <defs><clipPath id="portraitClip"><rect x="0" y="0" width="320" height="380" rx="135"/></clipPath></defs>
+          <g clip-path="url(#portraitClip)">
+            <rect width="320" height="380" fill="#dce7d9"/>
+            <circle cx="258" cy="60" r="38" fill="#f2d6a8" opacity=".8"/>
+            <path d="M28 380V325c0-63 42-103 132-103s132 40 132 103v55" fill="#718b72"/>
+            <!-- hair behind -->
+            <path d="M77 158C70 77 106 32 166 34c73 1 95 54 82 142l-9 104H84z" fill="#30251f"/>
+            <!-- neck and face -->
+            <path d="M131 202h62v67c-14 20-47 20-62 0z" fill="#c98565"/>
+            <ellipse cx="162" cy="143" rx="66" ry="83" fill="#d99a78"/>
+            <!-- hairline and locks -->
+            <path d="M95 150C78 87 110 43 166 43c59 0 86 43 75 111-12-12-21-35-23-59-25 17-65 22-103 12-1 21-8 37-20 51z" fill="#30251f"/>
+            <path d="M97 123c-12 39-7 97 6 130l-22 19c-20-55-24-130-2-178 14-30 44-52 83-55-30 14-49 39-65 84z" fill="#30251f"/>
+            <path d="M225 106c20 43 19 104 7 148l22 15c21-62 20-139-6-183-16-27-43-43-79-45 29 11 47 32 56 65z" fill="#30251f"/>
+            <!-- features -->
+            <path d="M128 147q12-9 24 0M174 147q12-9 24 0" fill="none" stroke="#493127" stroke-width="4" stroke-linecap="round"/>
+            <ellipse cx="141" cy="158" rx="4" ry="5" fill="#35261f"/><ellipse cx="185" cy="158" rx="4" ry="5" fill="#35261f"/>
+            <path d="M160 159l-5 22q6 5 13 0" fill="none" stroke="#b8735b" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M143 193q18 15 37 0" fill="none" stroke="#8e4b48" stroke-width="3.5" stroke-linecap="round"/>
+            <ellipse cx="124" cy="178" rx="12" ry="6" fill="#e99d91" opacity=".45"/><ellipse cx="199" cy="178" rx="12" ry="6" fill="#e99d91" opacity=".45"/>
+            <!-- blouse -->
+            <path d="M102 256l40-18 20 20 20-20 39 18 32 124H69z" fill="#f6f1e7"/>
+            <path d="M142 238l20 20-20 31-20-38zM182 238l-20 20 20 31 20-38z" fill="#d8ded1"/>
+            <path d="M160 258v122" stroke="#d8ded1" stroke-width="2"/>
           </g>
         </svg>
         <div class="portrait-note">Learning, creating, growing ✨</div>
-      </div>    </section>
+      </div>
+    </section>
 
     <section id="about">
       <div class="section-top"><div><div class="eyebrow">A little about me</div><h2>Strategy with a creative eye.</h2></div></div>
