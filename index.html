@@ -1,1243 +1,255 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Yasaman Tarrah's portfolio in digital marketing, SEO and web design.">
   <title>Yasaman TARRAH — Digital Marketing | SEO</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <style>
-    html, body { overscroll-behavior: none; }
- 
-    :root {
-      --color-primary-50: #f6f9ff;
-      --color-primary-100: #e9e5ff;
-      --color-primary-200: #d5ccff;
-      --color-primary-300: #bcb9e5;
-      --color-primary-400: #a7a3ab;
-      --color-primary-500: #5b46ff;
-      --color-primary-600: #4837cc;
-      --color-primary-700: #3730a3;
-      --color-primary-800: #312e81;
-      --color-primary-900: #1e1b4b;
-      --color-background-primary: #ffffff;
-      --color-background-secondary: #f8f9fa;
-      --color-background-tertiary: #f1f3f4;
-      --color-surface-primary: #ffffff;
-      --color-surface-secondary: #f8f9fa;
-      --color-surface-glass: rgba(255,255,255,0.08);
-      --color-text-primary: #212529;
-      --color-text-secondary: #495057;
-      --color-text-tertiary: #6c757d;
-      --color-border-primary: #dee2e6;
-      --color-border-glass: rgba(255,255,255,0.2);
-      --bg-color: var(--color-background-secondary);
-      --bg-gradient: linear-gradient(135deg,#f6f9ff,#bcb9e5,#a7a3ab);
-      --card-bg: var(--color-surface-primary);
-      --text-primary: var(--color-text-primary);
-      --text-secondary: var(--color-text-secondary);
-      --text-tertiary: var(--color-text-tertiary);
-      --accent-primary: var(--color-primary-500);
-      --accent-light: var(--color-primary-100);
-      --accent-medium: var(--color-primary-200);
-      --accent-dark: var(--color-primary-600);
-      --card-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -4px rgba(0,0,0,0.05);
-      --button-shadow: 0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);
-      --header-bg: linear-gradient(135deg,#4128fd,#502f92,#62239c);
-      --card-border: rgba(0,0,0,0.05);
-      --shadow-sm: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
-      --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);
-      --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05);
-      --shadow-glass: 0 8px 32px 0 rgba(31,38,135,0.37);
-      --shadow-glow: 0 0 20px rgba(91,70,255,0.3);
-      --radius-sm:0.5rem; --radius-md:0.75rem; --radius-lg:1rem; --radius-xl:1.25rem; --radius-2xl:1.5rem; --radius-full:9999px;
-      --tint-color:255,255,255; --tint-opacity:0.4; --frost-blur:2px;
-      --shadow-offset:0; --shadow-blur:20px; --shadow-spread:-5px; --shadow-color:rgba(255,255,255,0.7);
-      --outer-shadow-blur:24px;
-    }
- 
-    .dark {
-      --color-background-primary:#0a0d14;
-      --color-background-secondary:#111821;
-      --color-background-tertiary:#1f2937;
-      --color-surface-primary:#111821;
-      --color-surface-secondary:#1f2937;
-      --color-surface-glass:rgba(0,0,0,0.08);
-      --color-text-primary:#f8fafc;
-      --color-text-secondary:#cbd5e1;
-      --color-text-tertiary:#94a3b8;
-      --color-border-primary:#374151;
-      --color-border-glass:rgba(255,255,255,0.1);
-      --bg-color:var(--color-background-primary);
-      --bg-gradient:linear-gradient(135deg,#0a0d14,#0f1419,#121922,#16202b);
-      --card-bg:var(--color-surface-primary);
-      --text-primary:var(--color-text-primary);
-      --text-secondary:var(--color-text-secondary);
-      --text-tertiary:var(--color-text-tertiary);
-      --accent-primary:#8b5cf6;
-      --accent-light:#1e1b4b;
-      --accent-medium:#312e81;
-      --accent-dark:#a78bfa;
-      --card-shadow:0 25px 50px -12px rgba(0,0,0,0.4),0 10px 15px -3px rgba(0,0,0,0.3);
-      --button-shadow:0 10px 15px -3px rgba(0,0,0,0.2),0 4px 6px -2px rgba(0,0,0,0.15);
-      --header-bg:linear-gradient(135deg,#1e1b4b,#3730a3,#4338ca,#5b21b6);
-      --card-border:rgba(255,255,255,0.05);
-      --shadow-glass:0 8px 32px 0 rgba(0,0,0,0.37);
-      --shadow-glow:0 0 20px rgba(139,92,246,0.3);
-    }
- 
-    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; border:0 solid var(--card-border); }
- 
-    html {
-      font-family:'Open Sans',sans-serif;
-      font-size:16px; line-height:1.5;
-      -webkit-text-size-adjust:100%;
-      scroll-behavior:smooth;
-      scroll-padding-top:100px;
-    }
- 
-    body {
-      margin:0; padding:0; min-height:100vh;
-      background:var(--bg-gradient);
-      color:var(--text-primary);
-      transition:background 0.3s ease,color 0.3s ease;
-      display:flex; flex-direction:column;
-      overflow-x:hidden;
-    }
- 
-    h1,h2,h3,h4,h5,h6 { font-family:'Lato',sans-serif; color:var(--text-primary); transition:color 0.3s ease; }
-    a { color:inherit; text-decoration:none; }
- 
-    /* ═══════════════════════════════════════
-       CONTENT WRAPPER
-    ═══════════════════════════════════════ */
-    .content-wrapper {
-      background-color:var(--card-bg);
-      border-radius:1.5rem;
-      box-shadow:var(--card-shadow);
-      overflow:visible;
-      margin:1rem auto;
-      transition:background-color 0.3s ease,box-shadow 0.3s ease;
-      max-width:1280px;
-      min-height:800px;
-      position:relative;
-      width:100%;
-    }
- 
-    @media (max-width:767px) {
-      .content-wrapper {
-        border-radius:0.75rem;
-        margin:0.5rem;
-        width:calc(100% - 1rem);
-        min-height:unset;
-      }
-    }
- 
-    /* ═══════════════════════════════════════
-       MOBILE HEADER (NEW — replaces desktop header on mobile)
-    ═══════════════════════════════════════ */
-    .mobile-header {
-      display:none;
-    }
- 
-    @media (max-width:767px) {
-      .mobile-header {
-        display:block;
-        background:linear-gradient(135deg,rgba(82,60,248,0.92),rgba(96,44,199,0.88));
-        backdrop-filter:blur(16px) saturate(200%);
-        -webkit-backdrop-filter:blur(16px) saturate(200%);
-        border-radius:0.75rem 0.75rem 0 0;
-        padding:1.25rem 1rem 1.5rem;
-        position:relative;
-        overflow:hidden;
-      }
-      .mobile-header::before {
-        content:'';
-        position:absolute;top:0;left:0;right:0;height:2px;
-        background:linear-gradient(90deg,transparent,rgba(255,255,255,0.8),transparent);
-      }
-      .mobile-header-top {
-        display:flex;
-        align-items:center;
-        justify-content:space-between;
-        margin-bottom:1.25rem;
-      }
-      .mobile-header-name {
-        color:#fff;
-        font-size:1.5rem;
-        font-weight:700;
-        letter-spacing:-0.02em;
-        line-height:1.1;
-      }
-      .mobile-header-controls {
-        display:flex;
-        align-items:center;
-        gap:0.5rem;
-      }
-      .mobile-header-subtitle {
-        color:rgba(255,255,255,0.88);
-        font-size:0.85rem;
-        font-weight:400;
-        line-height:1.5;
-        margin-bottom:1.25rem;
-      }
-      .mobile-header-nav {
-        display:flex;
-        gap:0.5rem;
-        flex-wrap:wrap;
-      }
-      .mobile-nav-link {
-        color:rgba(255,255,255,0.85);
-        font-size:0.78rem;
-        font-weight:500;
-        padding:0.4rem 0.9rem;
-        border-radius:9999px;
-        background:rgba(255,255,255,0.12);
-        backdrop-filter:blur(8px);
-        border:1px solid rgba(255,255,255,0.2);
-        transition:all 0.2s ease;
-        letter-spacing:0.02em;
-      }
-      .mobile-nav-link:active {
-        background:rgba(255,255,255,0.25);
-        color:#fff;
-      }
-    }
- 
-    /* ═══════════════════════════════════════
-       HEADER CONTROLS (theme + lang)
-    ═══════════════════════════════════════ */
-    .theme-toggle, .lang-toggle {
-      background:var(--accent-light);
-      color:var(--accent-primary);
-      border:none; border-radius:9999px;
-      width:2.6rem; height:2.6rem;
-      display:flex; align-items:center; justify-content:center;
-      cursor:pointer;
-      transition:all 0.3s ease;
-      box-shadow:var(--button-shadow);
-      font-size:0.75rem; font-weight:700;
-      font-family:'Lato',sans-serif;
-      letter-spacing:0.03em;
-      flex-shrink:0;
-    }
-    .theme-toggle:hover, .lang-toggle:hover {
-      transform:scale(1.1); background:var(--accent-medium);
-    }
- 
-    /* Mobile controls — inside mobile header now (no fixed positioning) */
-    .header-controls.mobile-only {
-      display:flex; align-items:center; gap:0.5rem;
-    }
- 
-    /* Desktop controls */
-    @media (min-width:768px) {
-      .header-controls.mobile-only { display:none !important; }
-      .header-controls.desktop-only {
-        position:absolute; top:2rem; right:3rem;
-        display:flex; align-items:center; gap:0.5rem; z-index:51;
-      }
-      .header-controls.desktop-only.sticky {
-        top:50%; transform:translateY(-50%); right:2rem;
-      }
-    }
-    @media (max-width:767px) {
-      .header-controls.desktop-only { display:none !important; }
-    }
- 
-    /* ═══════════════════════════════════════
-       DESKTOP HEADER
-    ═══════════════════════════════════════ */
-    @media (min-width:768px) {
-      header {
-        background:linear-gradient(135deg,rgba(82,60,248,0.85),rgba(96,44,199,0.8));
-        backdrop-filter:blur(16px) saturate(220%);
-        -webkit-backdrop-filter:blur(16px) saturate(220%);
-        padding:2rem; position:relative; overflow:hidden;
-        height:170px;
-        transition:height 0.3s cubic-bezier(0.4,0,0.2,1),padding 0.3s cubic-bezier(0.4,0,0.2,1),background 0.3s ease,border-radius 0.3s ease,box-shadow 0.3s ease;
-        box-shadow:0 8px 32px rgba(0,0,0,0.1),inset 0 2px 4px rgba(255,255,255,0.6),inset 0 -2px 4px rgba(0,0,0,0.1),inset 2px 0 4px rgba(255,255,255,0.3),inset -2px 0 4px rgba(0,0,0,0.1),0 4px 16px rgba(82,60,248,0.2);
-        border-radius:1.5rem 1.5rem 0 0;
-        border:1px solid rgba(255,255,255,0.3);
-        border-top:2px solid rgba(255,255,255,0.5);
-        border-left:1px solid rgba(255,255,255,0.4);
-        border-right:1px solid rgba(0,0,0,0.1);
-        width:100%; max-width:1280px; box-sizing:border-box; margin:0 auto;
-        display:flex; align-items:flex-end; justify-content:flex-start;
-        padding-left:3rem; padding-bottom:.75rem;
-      }
-      header.sticky {
-        position:fixed; top:0; left:50%; transform:translateX(-50%);
-        width:100%; max-width:1280px;
-        padding:1.25rem 2rem; height:72px;
-        background:linear-gradient(135deg,rgba(82,60,248,0.9),rgba(96,44,199,0.85));
-        backdrop-filter:blur(20px) saturate(220%);
-        -webkit-backdrop-filter:blur(20px) saturate(220%);
-        z-index:50; border-radius:0;
-        border:1px solid rgba(255,255,255,0.25);
-        border-top:2px solid rgba(255,255,255,0.4);
-        box-shadow:0 4px 32px rgba(0,0,0,0.15),inset 0 2px 3px rgba(255,255,255,0.5),0 2px 16px rgba(82,60,248,0.25);
-        align-items:center; justify-content:space-between; flex-direction:row;
-      }
-      header::before {
-        content:''; position:absolute; top:0; left:0; right:0; height:3px;
-        background:linear-gradient(90deg,transparent 0%,rgba(255,255,255,0.9) 25%,rgba(255,255,255,0.6) 50%,rgba(255,255,255,0.9) 75%,transparent 100%);
-        border-radius:1.5rem 1.5rem 0 0; filter:blur(0.5px); pointer-events:none;
-      }
-      .dark header {
-        background:linear-gradient(135deg,rgba(30,27,75,0.85),rgba(55,48,163,0.8));
-        border:1px solid rgba(255,255,255,0.15); border-top:2px solid rgba(255,255,255,0.3);
-      }
-      .dark header.sticky {
-        background:linear-gradient(135deg,rgba(30,27,75,0.9),rgba(55,48,163,0.85));
-        height:72px; padding:1.25rem 2rem;
-      }
-      header h1 {
-        color:#fff; text-shadow:0 2px 8px rgba(0,0,0,0.15);
-        font-size:2.75rem; font-weight:600; margin:0; letter-spacing:-0.025em; line-height:1.1; white-space:nowrap;
-        transition:font-size 0.3s cubic-bezier(0.4,0,0.2,1),font-weight 0.3s cubic-bezier(0.4,0,0.2,1);
-      }
-      header.sticky h1 { font-size:1.375rem; font-weight:500; letter-spacing:-0.01em; margin:0; flex-shrink:0; }
-      header p {
-        color:rgba(255,255,255,0.92); margin:0; font-size:1.125rem; font-weight:400; line-height:1.4;
-        max-width:520px; display:block; white-space:normal; overflow:visible; text-align:left;
-        transition:font-size 0.3s cubic-bezier(0.4,0,0.2,1),opacity 0.3s cubic-bezier(0.4,0,0.2,1);
-      }
-      header.sticky p { font-size:0.875rem; font-weight:600; opacity:0.95; white-space:nowrap; max-width:none; margin:0; }
-      .header-content {
-        display:flex; flex-direction:column; align-items:flex-start; text-align:left;
-        width:100%; max-width:1000px; gap:0.75rem; position:relative;
-        transition:gap 0.3s cubic-bezier(0.4,0,0.2,1),flex-direction 0.3s cubic-bezier(0.4,0,0.2,1);
-      }
-      header.sticky .header-content {
-        flex-direction:row; align-items:baseline; gap:1.5rem;
-        padding-left:0; justify-content:flex-start; max-width:none; flex:0 0 auto;
-      }
-      .sticky-nav {
-        display:none; align-items:center; justify-content:center; gap:2rem;
-        position:absolute;
-        left:62.5%; top:50%; transform:translate(-50%,-50%);
-      }
-      header.sticky .sticky-nav { display:flex; }
-      .nav-link {
-        color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.875rem; font-weight:400;
-        padding:0.5rem 0.75rem; border-radius:6px; background:transparent; border:none;
-        transition:all 0.2s ease; white-space:nowrap; position:relative; letter-spacing:0.025em;
-      }
-      .nav-link::after {
-        content:''; position:absolute; bottom:0; left:50%; width:0; height:1px;
-        background:rgba(255,255,255,0.6); transition:all 0.2s ease; transform:translateX(-50%);
-      }
-      .nav-link:hover { color:rgba(255,255,255,1); background:rgba(255,255,255,0.08); }
-      .nav-link:hover::after { width:80%; }
-      .nav-link.active { color:#fff; background:rgba(255,255,255,0.12); }
-      .nav-link.active::after { width:80%; background:rgba(255,255,255,0.8); }
-    }
-    @media (max-width:767px) { header { display:none !important; } }
- 
-    /* ═══════════════════════════════════════
-       CONTENT CONTAINER
-    ═══════════════════════════════════════ */
-    .content-container {
-      display:flex;
-      flex-direction:column;
-      padding:1rem;
-      gap:1rem;
-      position:relative;
-      overflow:visible;
-    }
- 
-    @media (min-width:768px) {
-      .content-container {
-        flex-direction:row;
-        padding:2rem;
-        gap:2rem;
-        min-height:calc(100vh - 160px);
-        align-items:flex-start;
-      }
-      .sidebar-container {
-        width:25%;
-        position:sticky;
-        top:20px;
-        height:fit-content;
-        align-self:flex-start;
-        max-height:calc(100vh - 40px);
-        overflow:visible;
-        overscroll-behavior:contain;
-        transition:top 0.01s cubic-bezier(0.4,0,0.2,1);
-      }
-      .main-content {
-        width:75%;
-        padding-left:2rem;
-        min-height:200vh;
-        position:relative;
-      }
-      .main-content::before {
-        content:''; position:absolute; top:10%; left:0; height:80%; width:1px;
-        background:linear-gradient(to bottom,transparent,var(--accent-light) 20%,var(--accent-primary) 50%,var(--accent-light) 80%,transparent);
-        opacity:0.7; box-shadow:0 0 8px 1px rgba(91,70,255,0.1); transition:all 0.3s cubic-bezier(0.4,0,0.2,1);
-      }
-    }
- 
-    /* ═══════════════════════════════════════
-       SIDEBAR
-    ═══════════════════════════════════════ */
-    .sidebar {
-      display:flex; flex-direction:column; align-items:center; gap:1.5rem; width:100%; z-index:10;
-    }
- 
-    /* Mobile sidebar = profile photo card */
-    @media (max-width:767px) {
-      .sidebar-container {
-        width:100%;
-      }
-      .sidebar {
-        background:var(--card-bg);
-        border-radius:16px;
-        box-shadow:var(--card-shadow);
-        border:1px solid var(--card-border);
-        padding:1.5rem 1rem;
-      }
-      .desktop-sidebar-content { display:none !important; }
-    }
- 
-    @media (min-width:768px) {
-      .sidebar {
-        min-height:auto !important; padding:0 !important; background:transparent !important;
-        overflow:visible !important; justify-content:flex-start !important;
-      }
-      .sidebar::before { display:none !important; }
-      .hero-content { display:none !important; }
-      .profile-photo-container { width:205px !important; height:205px !important; margin:0 auto 0.6rem !important; }
-      .resume-button {
-        display:inline-block !important; background-color:var(--accent-light) !important;
-        color:var(--accent-primary) !important; font-weight:600 !important;
-        padding:0.75rem 2rem !important; border-radius:9999px !important;
-        box-shadow:var(--button-shadow) !important; transition:all 0.3s ease !important;
-        margin-top:1rem !important; font-size:1rem !important; text-decoration:none !important;
-        border:none !important; background:var(--accent-light) !important;
-      }
-      .resume-button:hover { background-color:var(--accent-medium) !important; transform:translateY(-5px) !important; }
-      .social-links { display:flex !important; gap:1.5rem !important; margin-top:1rem !important; justify-content:center !important; }
-      .social-link { font-size:1.25rem !important; color:var(--accent-primary) !important; transition:transform 0.3s ease,color 0.3s ease !important; }
-      .social-link:hover { transform:scale(1.2) !important; color:var(--accent-dark) !important; }
-      .desktop-sidebar-content { display:flex !important; flex-direction:column !important; align-items:center !important; text-align:center !important; gap:1rem !important; }
-      .sidebar-name { font-size:1.5rem !important; font-weight:700 !important; color:var(--text-primary) !important; margin:0 !important; }
-      .sidebar-title { font-size:0.9rem !important; color:var(--text-secondary) !important; line-height:1.5 !important; margin:0 !important; text-align:center !important; max-width:250px !important; }
-    }
- 
-    /* ═══════════════════════════════════════
-       PROFILE PHOTO
-    ═══════════════════════════════════════ */
-    .profile-photo-container {
-      width:130px; height:130px; margin:0 auto; border-radius:50%; position:relative;
-    }
- 
-    @media (max-width:767px) {
-      .profile-photo-container {
-        width:110px; height:110px;
-      }
-    }
- 
-    .profile-photo-wrapper {
-      position:relative; width:100%; height:100%; perspective:1000px;
-      border-radius:50%; overflow:visible; transform-style:preserve-3d;
-      transition:all 0.6s cubic-bezier(0.4,0,0.2,1);
-    }
-    .profile-photo-wrapper:hover { transform:translateY(-2px) rotateY(5deg) rotateX(-2deg); }
-    .profile-photo {
-      width:100%; height:100%; border-radius:50%;
-      background:#d4cfc9 url('./mobin\ mmoji.png') no-repeat center 20%;
-      background-size:110%;
-      transform-style:preserve-3d; transition:all 0.6s cubic-bezier(0.4,0,0.2,1);
-      position:relative; overflow:hidden;
-      box-shadow:0 8px 32px rgba(0,0,0,0.12),0 2px 8px rgba(0,0,0,0.08),inset 0 1px 0 rgba(255,255,255,0.15);
-      border:2px solid rgba(255,255,255,0.1);
-    }
-    .profile-photo::before {
-      content:''; position:absolute; inset:0; border-radius:50%;
-      background:linear-gradient(135deg,rgba(255,255,255,0.2) 0%,transparent 30%,transparent 70%,rgba(255,255,255,0.1) 100%);
-      pointer-events:none; opacity:0.8; transition:opacity 0.6s ease;
-    }
-    .memoji-overlay {
-      position:absolute; inset:0; border-radius:50%;
-      background:#d4cfc9 url('./mobin\ mmoji.png') no-repeat center 20%;
-      background-size:110%;
-      opacity:0; transition:opacity 0.35s ease,background-position 0.1s ease;
-      pointer-events:none; z-index:6; overflow:hidden;
-    }
-    .shine, .opposite-shine {
-      position:absolute; inset:0; border-radius:50%; pointer-events:none; opacity:0;
-      transition:all 0.5s cubic-bezier(0.4,0,0.2,1);
-    }
-    .shine { background:radial-gradient(circle at 50% 50%,rgba(255,255,255,0.4) 0%,rgba(255,255,255,0.2) 30%,transparent 60%); z-index:3; }
-    .opposite-shine { background:radial-gradient(circle at 50% 50%,rgba(139,92,246,0.15) 0%,rgba(79,70,229,0.1) 40%,transparent 70%); z-index:2; }
-    .model-3d-canvas-wrap { position:absolute; inset:0; border-radius:50%; z-index:4; pointer-events:none; opacity:0; }
- 
-    /* ═══════════════════════════════════════
-       HERO (mobile — inside sidebar card)
-    ═══════════════════════════════════════ */
-    .hero-content {
-      display:flex; flex-direction:column; align-items:center; text-align:center; gap:0.75rem; width:100%;
-    }
-    .hero-title { font-size:1.5rem; font-weight:700; color:var(--text-primary); margin:0; }
-    .hero-subtitle { font-size:0.875rem; color:var(--text-secondary); margin:0; line-height:1.5; }
-    .hero-buttons { display:flex; flex-direction:column; align-items:center; gap:0.75rem; width:100%; }
- 
-    /* Resume / CV buttons row */
-    .resume-buttons-row { display:flex; flex-wrap:wrap; gap:0.75rem; justify-content:center; margin-top:0.5rem; }
- 
-    /* Resume button */
-    .resume-button {
-      display:inline-block; background-color:var(--accent-light); color:var(--accent-primary);
-      font-weight:600; padding:0.65rem 1.75rem; border-radius:9999px; box-shadow:var(--button-shadow);
-      transition:all 0.3s ease; margin-top:0.5rem; font-size:0.9rem; text-align:center;
-    }
-    .resume-button:hover { background-color:var(--accent-medium); transform:translateY(-3px); }
- 
-    /* Social links */
-    .social-links { display:flex; gap:1.25rem; margin-top:0.5rem; justify-content:center; }
-    .social-link { font-size:1.25rem; color:var(--accent-primary); transition:transform 0.3s ease,color 0.3s ease; }
-    .social-link:hover { transform:scale(1.2); color:var(--accent-dark); }
- 
-    /* ═══════════════════════════════════════
-       SECTIONS
-    ═══════════════════════════════════════ */
-    .section {
-      margin-bottom:1.25rem;
-      padding:1.25rem;
-      background:var(--card-bg);
-      border-radius:16px;
-      box-shadow:var(--card-shadow);
-      border:1px solid var(--card-border);
-      position:relative;
-      overflow:hidden;
-    }
- 
-    @media (min-width:768px) {
-      .section {
-        margin-bottom:2.5rem;
-        padding:1.5rem;
-        overflow:visible;
-      }
-    }
- 
-    .section-title {
-      font-size:1.3rem;
-      font-weight:700;
-      margin-bottom:1.25rem;
-      position:relative;
-      padding-left:1rem;
-      color:var(--text-primary);
-    }
- 
-    @media (min-width:768px) {
-      .section-title { font-size:1.5rem; margin-bottom:1.5rem; }
-    }
- 
-    .section-title::before {
-      content:''; position:absolute; left:0; top:0; bottom:0; width:4px;
-      background:var(--accent-primary); border-radius:2px;
-    }
- 
-    /* ═══════════════════════════════════════
-       ABOUT
-    ═══════════════════════════════════════ */
-    .about-text { color:var(--text-secondary); line-height:1.7; }
-    .about-text p { margin-bottom:1.25rem; font-size:0.9rem; }
-    @media (min-width:768px) {
-      .about-text p { font-size:1rem; }
-    }
-    .philosophy-details { margin-top:1.5rem; border-top:1px solid var(--card-border); padding-top:1rem; }
-    .philosophy-details summary {
-      display:flex; align-items:center; justify-content:space-between;
-      padding:0.75rem 1rem; background:var(--accent-light); border:1px solid var(--accent-medium);
-      border-radius:12px; cursor:pointer; font-size:0.95rem; font-weight:600; color:var(--accent-primary);
-      list-style:none; transition:background 0.2s ease;
-    }
-    .philosophy-details summary::-webkit-details-marker { display:none; }
-    .philosophy-details summary::after { content:'+'; font-size:1.25rem; transition:transform 0.3s ease; }
-    .philosophy-details[open] summary::after { transform:rotate(45deg); }
-    .philosophy-details summary:hover { background:var(--accent-medium); }
-    .philosophy-details .philosophy-content {
-      display:grid; grid-template-rows:1fr; overflow:hidden;
-      padding:1.25rem 0.5rem 0.5rem; animation:slideOpen 0.4s ease-out;
-    }
-    @keyframes slideOpen {
-      from { grid-template-rows:0fr; opacity:0; padding-top:0; }
-      to { grid-template-rows:1fr; opacity:1; padding-top:1.25rem; }
-    }
-    .philosophy-details .philosophy-content p { margin-bottom:1rem; color:var(--text-secondary); line-height:1.7; font-size:0.9rem; }
-    .philosophy-details .philosophy-content p:last-child { margin-bottom:0; }
-    .philosophy-details .philosophy-content strong { color:var(--text-primary); }
- 
-    /* ═══════════════════════════════════════
-       PROJECTS
-    ═══════════════════════════════════════ */
-    /* MOBILE: horizontal scroll */
-    @media (max-width:767px) {
-      .projects-carousel-wrapper { width:100%; }
-      .projects-track {
-        display:flex;
-        overflow-x:auto;
-        gap:1rem;
-        scroll-snap-type:x mandatory;
-        padding:0.5rem 0.25rem 1rem;
-        scrollbar-width:none;
-        -ms-overflow-style:none;
-        -webkit-overflow-scrolling:touch;
-      }
-      .projects-track::-webkit-scrollbar { display:none; }
-      .carousel-slide { display:contents; }
-      .project-link {
-        flex:0 0 220px;
-        scroll-snap-align:start;
-      }
-      .project-card {
-        height:200px;
-        border-radius:16px;
-      }
-      .carousel-indicators-container { display:none !important; }
-      .mobile-scroll-hint {
-        display:flex;
-        align-items:center;
-        gap:0.4rem;
-        font-size:0.75rem;
-        color:var(--text-tertiary);
-        margin-bottom:0.5rem;
-        padding-left:0.25rem;
-      }
-      .mobile-scroll-hint i { font-size:0.7rem; }
-    }
- 
-    /* DESKTOP: grid carousel */
-    @media (min-width:768px) {
-      .mobile-scroll-hint { display:none; }
-      .projects-carousel-wrapper { position:relative; width:100%; }
-      .projects-track { position:relative; width:100%; min-height:660px; padding:0.5rem; margin:-0.5rem; }
-      .carousel-slide {
-        display:none;
-        grid-template-columns:repeat(3,1fr);
-        grid-template-rows:repeat(2,1fr);
-        gap:1.5rem; row-gap:2rem;
-        width:100%; padding:0.5rem;
-      }
-      .carousel-slide.active { display:grid; }
-      .carousel-indicators-container {
-        margin-top:1.75rem; display:flex; justify-content:center; align-items:center; position:relative;
-      }
-      .carousel-counter {
-        position:absolute; right:0; font-size:0.7rem; font-variant-numeric:tabular-nums;
-        letter-spacing:0.04em; color:var(--text-tertiary); opacity:0.45; user-select:none;
-      }
-      .carousel-indicators { display:flex; gap:7px; align-items:center; }
-      .carousel-indicator {
-        width:18px; height:13px; border-radius:99px; background:var(--text-tertiary);
-        border:none; cursor:pointer; transition:width 0.25s ease,background 0.25s ease,opacity 0.25s ease;
-        padding:0; opacity:0.35;
-      }
-      .carousel-indicator:hover { opacity:0.6; }
-      .carousel-indicator.active { width:40px; background:var(--accent-primary); opacity:1; }
-      .dark .carousel-indicator { background:rgba(255,255,255,0.4); }
-      .dark .carousel-indicator.active { background:var(--accent-primary); }
-    }
- 
-    /* PROJECT CARDS */
-    .project-link { text-decoration:none; color:inherit; }
-    .project-card {
-      position:relative; height:280px; background:var(--card-bg);
-      border-radius:20px; overflow:hidden; display:flex; align-items:center; justify-content:center;
-      box-shadow:var(--card-shadow);
-      transition:transform 0.6s cubic-bezier(0.23,1,0.32,1),box-shadow 0.6s cubic-bezier(0.23,1,0.32,1);
-      border:1px solid var(--card-border); transform-style:preserve-3d; will-change:transform; cursor:pointer;
-    }
-    .project-card:hover { box-shadow:0 20px 40px rgba(0,0,0,0.2); }
-    .project-card:hover .project-category { opacity:1; transform:translateY(0); }
-    .project-image {
-      position:absolute; top:0; left:0; width:100%; height:100%;
-      object-fit:cover; z-index:1;
-      transition:transform 0.5s cubic-bezier(0.23,1,0.32,1);
-      border-radius:20px; will-change:transform;
-    }
-    .project-title-chip {
-      position:relative; padding:0.75rem 1.5rem; border-radius:28px; isolation:isolate;
-      box-shadow:0px 6px var(--outer-shadow-blur) rgba(0,0,0,0.2);
-      z-index:5; text-align:center; max-width:90%;
-      transition:transform 0.5s cubic-bezier(0.23,1,0.32,1);
-      display:flex; align-items:center; justify-content:center;
-      transform-style:preserve-3d; will-change:transform;
-    }
-    .project-title-chip::before {
-      content:''; position:absolute; inset:0; z-index:-1; border-radius:28px;
-      box-shadow:inset var(--shadow-offset) var(--shadow-offset) var(--shadow-blur) var(--shadow-spread) var(--shadow-color);
-      background-color:rgba(var(--tint-color),var(--tint-opacity));
-    }
-    .project-title-chip::after {
-      content:''; position:absolute; inset:0; z-index:-2; border-radius:28px;
-      backdrop-filter:blur(var(--frost-blur)); -webkit-backdrop-filter:blur(var(--frost-blur));
-    }
-    .project-title-chip h3 {
-      margin:0; font-size:0.9rem; font-weight:700;
-      color:#212529; text-shadow:0 1px 1px rgba(255,255,255,0.5);
-    }
-    .project-category {
-      position:absolute; top:12px; left:12px; z-index:10;
-      padding:5px 10px; border-radius:8px; font-size:0.7rem; font-weight:600;
-      text-transform:uppercase; background:rgba(255,255,255,0.85);
-      backdrop-filter:blur(8px); color:var(--accent-primary);
-      box-shadow:0 2px 8px rgba(0,0,0,0.12);
-      opacity:0; transform:translateY(-8px); transition:opacity 0.3s ease,transform 0.3s ease;
-    }
-    /* Always show category on mobile (no hover) */
-    @media (max-width:767px) {
-      .project-category { opacity:1; transform:translateY(0); }
-    }
- 
-    /* ═══════════════════════════════════════
-       SKILLS
-    ═══════════════════════════════════════ */
-    .skills-category { margin-bottom:1.5rem; }
-    .category-title {
-      font-size:1rem; font-weight:600; margin-bottom:0.75rem; color:var(--text-primary);
-      display:flex; align-items:center; gap:0.5rem;
-    }
-    .category-title::before { content:''; width:8px; height:8px; background:var(--accent-primary); border-radius:50%; flex-shrink:0; }
-    .skills-container {
-      display:flex; flex-wrap:nowrap; gap:0.6rem; overflow-x:auto;
-      scroll-snap-type:x mandatory; padding:0.25rem 0 0.75rem;
-      scrollbar-width:none; -ms-overflow-style:none;
-    }
-    .skills-container::-webkit-scrollbar { display:none; }
-    @media (min-width:768px) {
-      .skills-container { flex-wrap:wrap; overflow-x:visible; scroll-snap-type:none; padding:0.5rem 0; }
-    }
-    .skill-badge {
-      flex:0 0 auto; padding:0.5rem 1rem; background:var(--accent-light); color:var(--accent-primary);
-      border:1px solid var(--accent-medium); border-radius:16px; font-size:0.8rem; font-weight:500;
-      transition:all 0.2s ease; scroll-snap-align:start; white-space:nowrap;
-    }
-    .skill-badge:hover { background:var(--accent-primary); color:white; transform:translateY(-2px); box-shadow:0 4px 12px rgba(91,70,255,0.3); border:1px solid transparent; }
- 
-    /* ═══════════════════════════════════════
-       EXPERIENCE
-    ═══════════════════════════════════════ */
-    .experience-list { display:flex; flex-direction:column; gap:1rem; }
-    .experience-item {
-      padding:1.25rem; background:var(--card-bg); border:1px solid var(--card-border);
-      border-radius:12px; transition:all 0.3s ease;
-    }
-    @media (min-width:768px) {
-      .experience-item { padding:1.5rem; }
-    }
-    .experience-item:hover { box-shadow:var(--card-shadow); }
-    .experience-title { font-size:1.1rem; font-weight:600; color:var(--accent-primary); margin-bottom:0.25rem; }
-    .experience-company { font-size:0.9rem; color:var(--text-primary); font-weight:500; margin-bottom:0.5rem; }
-    .experience-description { font-size:0.875rem; color:var(--text-secondary); line-height:1.6; margin-bottom:0.75rem; }
-    @media (min-width:768px) {
-      .experience-title { font-size:1.25rem; }
-      .experience-company { font-size:1rem; }
-      .experience-description { font-size:1rem; margin-bottom:1rem; }
-    }
-    .experience-tech { display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:0.75rem; }
-    .tech-tag {
-      display:inline-block; padding:0.2rem 0.6rem; font-size:0.72rem; font-weight:500;
-      color:var(--accent-primary); background:rgba(91,70,255,0.1);
-      border:1px solid rgba(91,70,255,0.2); border-radius:20px; transition:all 0.2s ease;
-    }
-    .tech-tag:hover { background:rgba(91,70,255,0.15); border-color:rgba(91,70,255,0.3); }
-    .dark .tech-tag { background:rgba(139,92,246,0.15); border-color:rgba(139,92,246,0.25); color:var(--accent-primary); }
- 
-    /* ═══════════════════════════════════════
-       FOOTER
-    ═══════════════════════════════════════ */
-    footer {
-      background:var(--header-bg); padding:1.25rem; text-align:center;
-      color:rgba(255,255,255,0.8); transition:background-color 0.3s ease;
-      border-radius:0 0 0.75rem 0.75rem;
-      font-size:0.875rem;
-    }
-    @media (min-width:768px) {
-      footer { border-radius:0 0 1.5rem 1.5rem; padding:1.5rem; }
-    }
- 
-    /* ═══════════════════════════════════════
-       LANG TRANSITION
-    ═══════════════════════════════════════ */
-    [data-en],[data-fr] { transition:opacity 0.2s ease; }
-  </style>
+    :root{--ink:#20231f;--muted:#686e67;--cream:#f7f7f1;--card:#fff;--green:#496b52;--line:#e4e7df;--pale:#e8eee5}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.65}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1100px,calc(100% - 40px));margin:auto}
+    header{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+    .brand{font-weight:700;letter-spacing:.04em}.brand span{color:var(--green)}
+    nav{display:flex;gap:26px;font-size:.92rem;color:var(--muted)}nav a:hover,.text-link:hover{color:var(--green)}
+    .hero{display:grid;grid-template-columns:1.35fr .65fr;align-items:center;gap:56px;padding:88px 0 82px}
+    .eyebrow{color:var(--green);font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+    h1,h2,h3,p{margin-top:0}h1{font:700 clamp(2.8rem,6vw,5.25rem)/1.04 "Playfair Display",serif;letter-spacing:-.04em;margin:18px 0 22px}
+    h1 em{font-style:normal;color:var(--green)}.intro{max-width:600px;color:var(--muted);font-size:1.08rem}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{padding:12px 19px;border-radius:999px;font-weight:600;font-size:.92rem;display:inline-flex;align-items:center;justify-content:center}
+    .primary{background:var(--green);color:white}.secondary{border:1px solid #cdd5ca;background:transparent}.btn:hover{transform:translateY(-1px)}
+    .portrait-card{position:relative;background:var(--pale);border-radius:46% 46% 26px 26px;padding:22px;max-width:330px;justify-self:center;width:100%}
+    .portrait-card svg{display:block;width:100%;height:auto}.portrait-note{position:absolute;bottom:16px;left:-22px;background:white;border:1px solid var(--line);padding:10px 15px;border-radius:12px;box-shadow:0 12px 35px #24301b12;font-size:.8rem;color:var(--muted)}
+    section{padding:72px 0;border-top:1px solid var(--line)}.section-top{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:28px}
+    h2{font:700 clamp(2rem,4vw,3rem)/1.15 "Playfair Display",serif;letter-spacing:-.03em;margin:8px 0}
+    .section-desc{color:var(--muted);max-width:520px;margin:0}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+    .about-copy{font-size:1.02rem;color:var(--muted)}.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .fact{padding:18px;border:1px solid var(--line);border-radius:16px;background:#ffffffa8}.fact strong{display:block;color:var(--green);font-size:1rem}.fact span{color:var(--muted);font-size:.85rem}
+    .skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}.chip{padding:8px 13px;background:var(--pale);color:#3c5b44;border-radius:999px;font-size:.85rem;font-weight:600}
+    .projects{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.project{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+    .project-art{height:172px;display:grid;place-items:center;background:#e9eee5;color:var(--green);font-size:2.7rem}.project:nth-child(2) .project-art{background:#f2e9e1;color:#90664f}.project:nth-child(3) .project-art{background:#e8eaf2;color:#555f91}
+    .project-body{padding:22px;display:flex;flex-direction:column;flex:1}.project h3{font-size:1.12rem;margin-bottom:8px}.project p{color:var(--muted);font-size:.91rem;flex:1}.project small{color:var(--green);font-weight:700;letter-spacing:.04em}
+    .notice{font-size:.83rem;color:var(--muted);margin-top:18px}
+    .video-frame{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:18px;background:#171a17}
+    .video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+    .video-copy{max-width:780px;padding-top:22px;color:var(--muted)}.video-copy h3{color:var(--ink);margin-bottom:8px}.video-copy strong{color:var(--ink)}
+
+    .contact{background:#e9eee5;border-radius:24px;padding:36px;display:flex;justify-content:space-between;align-items:center;gap:24px}.contact p{color:var(--muted);margin-bottom:0}
+    footer{padding:26px 0;color:var(--muted);font-size:.82rem;display:flex;justify-content:space-between;gap:16px}
+    @media(max-width:760px){nav{gap:13px;font-size:.82rem}.hero{grid-template-columns:1fr;gap:38px;padding:60px 0}.portrait-card{max-width:260px}.about-grid{grid-template-columns:1fr;gap:22px}.projects{grid-template-columns:1fr}.section-top{display:block}.section-desc{margin-top:12px}.contact{align-items:flex-start;flex-direction:column}section{padding:54px 0}}
+    @media(max-width:440px){header{height:auto;padding:18px 0;align-items:flex-start;gap:15px;flex-direction:column}nav{flex-wrap:wrap}.wrap{width:min(100% - 30px,1100px)}}
+  
+/* Modern minimal design system + theme support */
+:root{
+ --bg:#f6f7f8;--surface:#ffffff;--surface-2:#eef1f3;--ink:#171a1f;
+ --muted:#68717d;--line:#e2e6ea;--accent:#5b62e8;--accent-soft:#eeefff;
+ --shadow:0 16px 50px rgba(25,35,50,.055);--radius:20px;color-scheme:light;
+}
+html[data-theme="dark"]{
+ --bg:#101216;--surface:#181b21;--surface-2:#20242c;--ink:#f3f4f6;
+ --muted:#a0a8b5;--line:#2b303a;--accent:#a5aaff;--accent-soft:#282b49;
+ --shadow:0 18px 55px rgba(0,0,0,.22);color-scheme:dark;
+}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{background:var(--bg)!important;color:var(--ink)!important;font-family:Inter,"DM Sans",system-ui,-apple-system,sans-serif!important;line-height:1.7;transition:background .22s,color .22s}
+a{color:inherit}
+.wrap{width:min(1120px,calc(100% - 44px));margin-inline:auto}
+header{position:sticky;top:0;z-index:20;gap:16px;padding-inline:max(22px,calc((100% - 1120px)/2));height:72px;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)!important}
+.brand{font-weight:750;letter-spacing:-.035em;text-decoration:none;color:var(--ink)!important}
+.brand span{color:var(--accent)!important}
+nav{gap:22px;align-items:center}
+nav a,.back{color:var(--muted)!important;transition:color .15s}
+nav a:hover,.back:hover{color:var(--accent)!important}
+.theme-toggle{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:9px 13px;font:600 .82rem inherit;cursor:pointer;white-space:nowrap}
+.theme-toggle:hover{border-color:var(--accent)}
+.hero{padding-top:clamp(52px,8vw,104px)!important;padding-bottom:clamp(48px,7vw,88px)!important}
+.eyebrow{color:var(--accent)!important;font-size:.72rem!important;letter-spacing:.13em!important}
+h1,h2,h3{font-family:Inter,"DM Sans",system-ui,sans-serif!important;color:var(--ink);letter-spacing:-.055em!important}
+h1{font-weight:720!important;line-height:1.02!important}
+h2{font-weight:680!important;line-height:1.12!important}
+h3{font-weight:650!important;letter-spacing:-.025em!important}
+p,.lead,.muted,.caption{color:var(--muted)}
+section{border-color:var(--line)!important}
+.panel,.card,.tile,.week,.mock,table,.art{background:var(--surface)!important;border-color:var(--line)!important;box-shadow:var(--shadow)}
+.panel,.card,.tile,.week{border-radius:var(--radius)!important}
+.panel p,.card p,.tile p,.week p{color:var(--muted)}
+th{background:var(--surface-2)!important;color:var(--ink)!important}
+td{border-color:var(--line)!important}
+.intent{background:var(--surface-2)!important;color:var(--muted)!important}
+.kpi div{background:var(--accent-soft)!important}
+.kpi b{color:var(--accent)!important}
+.btn,.primary,.smallbtn{background:var(--accent)!important;color:white!important;border:1px solid var(--accent)!important}
+.secondary{border:1px solid var(--line)!important;background:var(--surface)!important;color:var(--ink)!important}
+.notice,.note{background:var(--accent-soft)!important;border-color:color-mix(in srgb,var(--accent) 30%,var(--line))!important;color:var(--ink)!important}
+.mockbar{background:var(--surface-2)!important;color:var(--ink)!important;border-bottom:1px solid var(--line)}
+footer{border-top:1px solid var(--line);margin-top:32px;color:var(--muted)}
+img{max-width:100%}
+::selection{background:var(--accent-soft)}
+@media(max-width:720px){
+ header{height:auto;min-height:68px;flex-wrap:wrap;padding-block:12px}
+ nav{gap:14px;flex-wrap:wrap}
+ .theme-toggle{padding:8px 10px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+
+</style>
 </head>
 <body>
-  <div class="content-wrapper">
- 
-   <!-- ── MOBILE HEADER (visible only on mobile) ── -->
-    <div class="mobile-header">
-      <div class="mobile-header-top">
-        <div class="mobile-header-name">MOBIN MIR</div>
-        <div class="mobile-header-controls header-controls mobile-only" id="controls-mobile">
-          <button aria-label="Toggle language" class="lang-toggle" id="lang-toggle-mobile">FR</button>
-          <button aria-label="Toggle dark mode" class="theme-toggle" id="theme-toggle-mobile"><i class="fas fa-moon"></i></button>
+<div class="wrap">
+  <header>
+    <a class="brand" href="#home">YASAMAN<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#video-seo">Video SEO</a><a href="#contact">Contact</a>
+    </nav>
+  <button class="theme-toggle" type="button">◐ <span>Dark mode</span></button>
+</header>
+
+  <main>
+    <section class="hero" id="home" style="border:0">
+      <div>
+        <div class="eyebrow">Digital Marketing · SEO · Web Design</div>
+        <h1>Hello, I'm<br><em>Yasaman Tarrah.</em></h1>
+        <p class="intro">I’m building at the intersection of digital marketing, search visibility and thoughtful web experiences. Curious by nature, detail-oriented, and always learning.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">Explore my work ↗</a>
+          <a class="btn secondary" href="#contact">Get in touch</a>
         </div>
       </div>
-      <div class="mobile-header-subtitle" id="mobile-subtitle">Digital Marketing | SEO &amp; WordPress Web Developer</div>
-      <nav class="mobile-header-nav">
-        <a class="mobile-nav-link" href="#about-section" data-en="About" data-fr="À propos">About</a>
-        <a class="mobile-nav-link" href="#projects-section" data-en="Projects" data-fr="Projets">Projects</a>
-        <a class="mobile-nav-link" href="#skills-section" data-en="Skills" data-fr="Compétences">Skills</a>
-        <a class="mobile-nav-link" href="#experiences-section" data-en="Experience" data-fr="Expérience">Experience</a>
-      </nav>
-    </div>
-
-    <!-- ── DESKTOP HEADER ── -->
-    <header>
-      <div class="header-controls desktop-only" id="controls-desktop">
-        <button aria-label="Toggle language" class="lang-toggle" id="lang-toggle-desktop">FR</button>
-        <button aria-label="Toggle dark mode" class="theme-toggle" id="theme-toggle-desktop"><i class="fas fa-moon"></i></button>
+      <div class="portrait-card" aria-label="Illustrated girl avatar">
+        <!-- Self-contained avatar illustration. Replace this SVG with your own photo whenever you like. -->
+        <svg viewBox="0 0 320 380" role="img" aria-label="Stylized portrait avatar of a woman with long dark hair">
+          <defs><clipPath id="portraitClip"><rect x="0" y="0" width="320" height="380" rx="135"/></clipPath></defs>
+          <g clip-path="url(#portraitClip)">
+            <rect width="320" height="380" fill="#dce7d9"/>
+            <circle cx="258" cy="60" r="38" fill="#f2d6a8" opacity=".8"/>
+            <path d="M28 380V325c0-63 42-103 132-103s132 40 132 103v55" fill="#718b72"/>
+            <!-- hair behind -->
+            <path d="M77 158C70 77 106 32 166 34c73 1 95 54 82 142l-9 104H84z" fill="#30251f"/>
+            <!-- neck and face -->
+            <path d="M131 202h62v67c-14 20-47 20-62 0z" fill="#c98565"/>
+            <ellipse cx="162" cy="143" rx="66" ry="83" fill="#d99a78"/>
+            <!-- hairline and locks -->
+            <path d="M95 150C78 87 110 43 166 43c59 0 86 43 75 111-12-12-21-35-23-59-25 17-65 22-103 12-1 21-8 37-20 51z" fill="#30251f"/>
+            <path d="M97 123c-12 39-7 97 6 130l-22 19c-20-55-24-130-2-178 14-30 44-52 83-55-30 14-49 39-65 84z" fill="#30251f"/>
+            <path d="M225 106c20 43 19 104 7 148l22 15c21-62 20-139-6-183-16-27-43-43-79-45 29 11 47 32 56 65z" fill="#30251f"/>
+            <!-- features -->
+            <path d="M128 147q12-9 24 0M174 147q12-9 24 0" fill="none" stroke="#493127" stroke-width="4" stroke-linecap="round"/>
+            <ellipse cx="141" cy="158" rx="4" ry="5" fill="#35261f"/><ellipse cx="185" cy="158" rx="4" ry="5" fill="#35261f"/>
+            <path d="M160 159l-5 22q6 5 13 0" fill="none" stroke="#b8735b" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M143 193q18 15 37 0" fill="none" stroke="#8e4b48" stroke-width="3.5" stroke-linecap="round"/>
+            <ellipse cx="124" cy="178" rx="12" ry="6" fill="#e99d91" opacity=".45"/><ellipse cx="199" cy="178" rx="12" ry="6" fill="#e99d91" opacity=".45"/>
+            <!-- blouse -->
+            <path d="M102 256l40-18 20 20 20-20 39 18 32 124H69z" fill="#f6f1e7"/>
+            <path d="M142 238l20 20-20 31-20-38zM182 238l-20 20 20 31 20-38z" fill="#d8ded1"/>
+            <path d="M160 258v122" stroke="#d8ded1" stroke-width="2"/>
+          </g>
+        </svg>
+        <div class="portrait-note">Learning, creating, growing ✨</div>
       </div>
-      <div class="header-content">
-        <h1 id="nameHeader">MOBIN MIR</h1>
-        <p id="headerSubtitle">Digital Marketing | SEO &amp; WordPress Web Developer</p>
+    </section>
+
+    <section id="about">
+      <div class="section-top"><div><div class="eyebrow">A little about me</div><h2>Strategy with a creative eye.</h2></div></div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>With a background in international business and a growing foundation in web development, I enjoy understanding both the people behind a search and the technology behind a website.</p>
+          <p>My focus is to build practical skills through real projects—from clear content and SEO fundamentals to clean, responsive web pages.</p>
+        </div>
+        <div class="facts">
+          <div class="fact"><strong>Education</strong><span>Master’s — International Business & Management</span></div>
+          <div class="fact"><strong>Based in</strong><span>Paris, France</span></div>
+          <div class="fact"><strong>Exploring</strong><span>SEO · Front-end development</span></div>
+          <div class="fact"><strong>Languages</strong><span>Persian · French · English</span></div>
+        </div>
       </div>
-      <nav class="sticky-nav">
-        <a class="nav-link" href="#about-section" data-en="About" data-fr="À propos">About</a>
-        <a class="nav-link" href="#projects-section" data-en="Projects" data-fr="Projets">Projects</a>
-        <a class="nav-link" href="#skills-section" data-en="Skills" data-fr="Compétences">Skills</a>
-        <a class="nav-link" href="#experiences-section" data-en="Experience" data-fr="Expérience">Experience</a>
-      </nav>
-    </header>
+    </section>
 
-    <div class="content-container">
-      <div class="sidebar-container">
-        <aside class="sidebar" id="sidebar">
-          <div class="profile-photo-container">
-            <div class="profile-photo-wrapper" id="profile-wrapper">
-              <div class="model-3d-canvas-wrap"><canvas id="model-canvas"></canvas></div>
-              <div class="profile-photo"></div>
-              <div class="memoji-overlay" id="memoji-overlay"></div>
-              <div class="shine"></div>
-              <div class="opposite-shine"></div>
-            </div>
-          </div>
+    <section id="skills">
+      <div class="eyebrow">What I'm learning</div><h2>Skills & interests</h2>
+      <p class="section-desc">This list is a work in progress—keep only the tools and skills you can confidently discuss.</p>
+      <div class="skills">
+        <span class="chip">SEO fundamentals</span><span class="chip">Keyword research</span><span class="chip">Content strategy</span>
+        <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">Responsive design</span>
+        <span class="chip">WordPress</span><span class="chip">Digital marketing</span><span class="chip">JavaScript — learning</span>
+      </div>
+    </section>
 
-          <!-- Mobile hero (inside sidebar card) -->
-<div class="hero-content">
-  <h1 class="hero-title">Mobin MIR</h1>
+    <section id="projects">
+      <div class="section-top"><div><div class="eyebrow">Selected work</div><h2>Projects & experiments</h2></div><p class="section-desc">Replace these starter cards with your own projects, screenshots, links and results.</p></div>
+      <div class="projects">
+        <article class="project">
+          <div class="project-art" aria-hidden="true">⌕</div>
+          <div class="project-body"><small>SEO · CASE STUDY</small><h3>SEO Audit — Maison Seconde</h3><p>An SEO audit concept for a fictional Paris vintage luxury-watch retailer, focused on discovery, trust and qualified enquiries.</p><a class="text-link" href="seo-audit.html">View case study ↗</a></div>
+        </article>
+        <article class="project">
+          <div class="project-art" aria-hidden="true">✳</div>
+          <div class="project-body"><small>WEB DESIGN · E-COMMERCE</small><h3>Luxury E-commerce Landing Page</h3><p>A conversion-focused landing-page concept for Maison Seconde, with brand positioning, product discovery and buyer reassurance.</p><a class="text-link" href="landing-page.html">View case study ↗</a></div>
+        </article>
+        <article class="project">
+          <div class="project-art" aria-hidden="true">↗</div>
+          <div class="project-body"><small>KEYWORD RESEARCH · STRATEGY</small><h3>Keyword & Content Plan</h3><p>A search-intent-led content strategy for helping shoppers discover and confidently evaluate pre-owned luxury watches.</p><a class="text-link" href="keyword-plan.html">View case study ↗</a></div>
+        </article>
+      </div>
+      <p class="notice">Portfolio note: the cards above are placeholders, not published client work. Update them as you complete projects.</p>
+    </section>
 
-  <p class="hero-subtitle" 
-     data-en="Digital Marketing | SEO &amp; Web Developer WordPress" 
-     data-fr="Marketing Digital | SEO &amp; Développeur Web WordPress">
-    Digital Marketing | SEO &amp; Web Developer WordPress
-  </p>
 
-  <div class="hero-buttons">
-    <div class="resume-buttons-row">
+    <section id="video-seo">
+      <div class="section-top"><div><div class="eyebrow">Video SEO · Content example</div><h2>Inside the Rolex Submariner</h2></div><p class="section-desc">A video-content example exploring how a luxury watch brand can use storytelling and useful on-page context.</p></div>
+      <div class="video-frame">
+        <iframe src="https://www.youtube-nocookie.com/embed/xPDtWzEmG0c" title="Rolex Submariner — Below and Beyond, official Rolex video" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="video-copy">
+        <h3>Video SEO content concept</h3>
+        <p>Explore the Rolex Submariner through its design, diving heritage and watchmaking story. This example shows how a page can pair video with descriptive, original text that helps visitors understand what they are watching.</p>
+        <p><strong>SEO practice:</strong> write a useful original summary, add accurate captions or a transcript when available, use a descriptive page title, and provide a relevant thumbnail. Video alone does not guarantee search visibility.</p>
+        <p class="notice">Video: ROLEX official YouTube channel. This portfolio page is an independent learning example and is not affiliated with or endorsed by Rolex.</p>
+        <a class="text-link" href="https://www.youtube.com/watch?v=xPDtWzEmG0c" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a>
+      </div>
+    </section>
 
-      <a class="resume-button" 
-         href="mobin portfolio.pdf" 
-         download 
-         data-en="View Portfolio" 
-         data-fr="Voir mon portfolio">
-        View Portfolio
-      </a>
-
-      <a class="resume-button" 
-         href="M-R.pdf" 
-         download 
-         data-en="View CV" 
-         data-fr="Voir mon CV">
-        View CV
-      </a>
-
-    </div>
-
-    <div class="social-links">
-      <a class="social-link" 
-         href="https://www.linkedin.com/in/mobin-miro-4a8608222" 
-         target="_blank">
-        <i class="fab fa-linkedin"></i>
-      </a>
-
-      <a class="social-link" 
-         href="mailto:mobin.h@me.com">
-        <i class="fas fa-envelope"></i>
-      </a>
-    </div>
-  </div>
+    <section id="contact">
+      <div class="contact">
+        <div><div class="eyebrow">Let's connect</div><h2>Have a project in mind?</h2><p>I’d love to hear from you.</p></div>
+        <!-- Replace the email below with the address you want to publish. -->
+        <a class="btn primary" href="mailto:hello@example.com">Email me ↗</a>
+      </div>
+    </section>
+  </main>
+  <footer><span>© <span id="year">2026</span> Yasaman Tarrah</span><a href="#home">Back to top ↑</a></footer>
 </div>
 
-          <!-- Desktop sidebar content -->
-          <div class="desktop-sidebar-content">
-            <h2 class="sidebar-name">Mobin MIR</h2>
-            <p class="sidebar-title" data-en="SEO & Digital Marketing Specialist<br/>Web Developer, WordPress" data-fr="Spécialiste SEO & Marketing Digital<br/>Développeur Web, WordPress">SEO &amp; Digital Marketing Specialist<br/>Web Developer, WordPress</p>
-            <div class="resume-buttons-row">
-              <a class="resume-button" href="mobin portfolio.pdf" download data-en="Portfolio" data-fr="Portfolio">View Resume</a>
-              <a class="resume-button" href="M-R.pdf" download data-en="CV" data-fr="Voir CV">View CV</a>
-            </div>
-            <div class="social-links">
-              <a class="social-link" href="https://www.linkedin.com/in/mobin-miro-4a8608222" target="_blank"><i class="fab fa-linkedin"></i></a>
-              <a class="social-link" href="mailto:mobin.h@me.com"><i class="fas fa-envelope"></i></a>
-            </div>
-          </div>
-        </aside>
-      </div>
-
-      <main class="main-content" id="main-content">
- 
-        <!-- ABOUT -->
-        <section class="section" id="about-section">
-          <h2 class="section-title" data-en="About Me" data-fr="À propos de moi">About Me</h2>
-          <div class="about-text" id="about-me">
-            <p data-en="I'm Mobin, an SEO and Digital Marketing specialist focused on WordPress and web development." data-fr="Je suis Mobin, spécialiste SEO et Marketing Digital, axé sur WordPress et le développement web.">I'm Mobin, an SEO and Digital Marketing specialist focused on WordPress and web development.</p>
-            <p data-en="I earned my Bachelor's degree (Bac+3) from ISCOD, where I combined academic learning with hands-on experience in website management, SEO, and digital optimization." data-fr="J'ai obtenu mon Bachelor (Bac+3) à l'ISCOD, où j'ai combiné apprentissage académique et expérience pratique en gestion de sites web, SEO et optimisation digitale.">I earned my Bachelor's degree (Bac+3) from ISCOD, where I combined academic learning with hands-on experience in website management, SEO, and digital optimization.</p>
-            <p data-en="I'm passionate about helping brands grow online by building websites that are both visually professional and optimized for strong search performance. My experience includes technical SEO, content optimization, website analytics, WordPress management, and improving user experience." data-fr="Je suis passionné par l'aide aux marques pour leur croissance en ligne, en construisant des sites web à la fois visuellement professionnels et optimisés pour les moteurs de recherche. Mon expérience inclut le SEO technique, l'optimisation de contenu, l'analyse web, la gestion WordPress et l'amélioration de l'expérience utilisateur.">I'm passionate about helping brands grow online by building websites that are both visually professional and optimized for strong search performance. My experience includes technical SEO, content optimization, website analytics, WordPress management, and improving user experience.</p>
-            <details class="philosophy-details">
-              <summary data-en="My Philosophy" data-fr="Ma Philosophie">My Philosophy</summary>
-              <div class="philosophy-content">
-                <p data-en="<strong>I work across SEO, digital marketing,</strong> WordPress, and web development with a problem-solving mindset. Whether it's improving a website's visibility on Google, optimizing technical performance, managing content strategy, or enhancing user experience, I'm comfortable moving between technical and creative challenges. What matters most to me is building solutions that create real impact." data-fr="<strong>Je travaille dans le SEO, le marketing digital,</strong> WordPress et le développement web avec un esprit orienté solutions. Ce qui compte le plus pour moi, c'est de construire des solutions à fort impact."><strong>I work across SEO, digital marketing,</strong> WordPress, and web development with a problem-solving mindset. What matters most to me is building solutions that create real impact.</p>
-                <p data-en="<strong>I believe good digital</strong> work should be both effective and sustainable. I focus on understanding what users actually need, then make clear decisions around performance, structure, SEO, and usability." data-fr="<strong>Je crois que le bon travail digital</strong> doit être à la fois efficace et durable. Je me concentre sur la compréhension des besoins réels des utilisateurs."><strong>I believe good digital</strong> work should be both effective and sustainable. I focus on understanding what users actually need, then make clear decisions around performance, structure, SEO, and usability.</p>
-                <p data-en="<strong>Most importantly,</strong> I'm rigorous about testing and evaluation, but I'm not dogmatic. The best insights come from teammates, users, and data. I stay curious, adjust based on what I'm learning, and get better at my craft continuously." data-fr="<strong>Avant tout,</strong> je suis rigoureux dans les tests et l'évaluation, sans être dogmatique. Je reste curieux et je m'améliore continuellement."><strong>Most importantly,</strong> I'm rigorous about testing and evaluation. The best insights come from teammates, users, and data. I stay curious and get better at my craft continuously.</p>
-              </div>
-            </details>
-          </div>
-        </section>
- 
-        <!-- PROJECTS -->
-        <section class="section" id="projects-section">
-  <h2 class="section-title" data-en="Projects" data-fr="Projets">Projects</h2>
-  <div class="mobile-scroll-hint">
-    <i class="fas fa-hand-point-right"></i>
-    <span data-en="Swipe to see more" data-fr="Faites glisser pour voir plus">Swipe to see more</span>
-  </div>
-  <div class="projects-carousel-wrapper">
-    <div class="projects-track" id="projects-track">
-      <div class="carousel-slide active">
-        <div class="project-link">
-          <div class="project-card">
-            <div class="project-category">SEO</div>
-            <img src="/1.png" alt="SEO Optimization Projects" class="project-image">
-            <div class="project-title-chip"><h3 data-en="SEO Optimization Projects" data-fr="Projets d'Optimisation SEO">SEO Optimization Projects</h3></div>
-          </div>
-        </div>
-        <div class="project-link">
-          <div class="project-card">
-            <div class="project-category">WORDPRESS</div>
-            <img src="./s.png" alt="WordPress Website Design" class="project-image">
-            <div class="project-title-chip"><h3 data-en="WordPress Website Design" data-fr="Design Site WordPress">WordPress Website Design</h3></div>
-          </div>
-        </div>
-        <div class="project-link">
-          <div class="project-card">
-            <div class="project-category">WORDPRESS</div>
-            <img src="./Slide 1.png" alt="WordPress Website Design" class="project-image">
-            <div class="project-title-chip"><h3 data-en="WordPress Website Design" data-fr="Design Site WordPress">WordPress Website Design</h3></div>
-          </div>
-        </div>
-        <div class="project-link">
-          <div class="project-card">
-            <div class="project-category">LOGO</div>
-            <img src="./kfs-logo-1080x1350.jpg" alt="Logo Design" class="project-image">
-            <div class="project-title-chip"><h3 data-en="Logo Design" data-fr="Design de Logo">Logo Design</h3></div>
-          </div>
-        </div>
-        <div class="project-link">
-          <div class="project-card">
-            <div class="project-category">INSTAGRAM</div>
-            <img src="./ins.png" alt="Digital Marketing" class="project-image">
-            <div class="project-title-chip"><h3 data-en="Digital Marketing" data-fr="Marketing Digital">Digital Marketing</h3></div>
-          </div>
-        </div>
-        <div class="project-link">
-          <div class="project-card">
-            <div class="project-category">ADOBE</div>
-            <img src="./apple.png" alt="Photoshop" class="project-image">
-            <div class="project-title-chip"><h3 data-en="Photoshop" data-fr="Photoshop">Photoshop</h3></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-indicators-container">
-      <div class="carousel-indicators" id="carousel-indicators"></div>
-      <span class="carousel-counter" id="carousel-counter"></span>
-    </div>
-  </div>
-</section>
- 
-        <!-- SKILLS -->
-        <section class="section" id="skills-section">
-          <h2 class="section-title" data-en="Skills &amp; Expertise" data-fr="Compétences &amp; Expertise">Skills &amp; Expertise</h2>
-          <div class="skills-category">
-            <h3 class="category-title" data-en="SEO" data-fr="SEO">SEO</h3>
-            <div class="skills-container">
-              <div class="skill-badge" data-en="Technical SEO" data-fr="SEO Technique">Technical SEO</div>
-              <div class="skill-badge" data-en="On-Page SEO" data-fr="SEO On-Page">On-Page SEO</div>
-              <div class="skill-badge" data-en="Keyword Research" data-fr="Recherche de Mots-clés">Keyword Research</div>
-              <div class="skill-badge" data-en="Google Search Console" data-fr="Google Search Console">Google Search Console</div>
-              <div class="skill-badge" data-en="SEO Strategy" data-fr="Stratégie SEO">SEO Strategy</div>
-              <div class="skill-badge" data-en="Internal Linking" data-fr="Maillage Interne">Internal Linking</div>
-              <div class="skill-badge" data-en="Performance Optimization" data-fr="Optimisation des Performances">Performance Optimization</div>
-              <div class="skill-badge" data-en="Indexing &amp; Crawlability" data-fr="Indexation &amp; Crawlabilité">Indexing &amp; Crawlability</div>
-            </div>
-          </div>
-          <div class="skills-category">
-            <h3 class="category-title" data-en="Web Development" data-fr="Développement Web">Web Development</h3>
-            <div class="skills-container">
-              <div class="skill-badge">WordPress</div>
-              <div class="skill-badge">HTML</div>
-              <div class="skill-badge">CSS</div>
-              <div class="skill-badge">JavaScript</div>
-              <div class="skill-badge">Elementor</div>
-              <div class="skill-badge" data-en="Responsive Design" data-fr="Design Responsive">Responsive Design</div>
-            </div>
-          </div>
-          <div class="skills-category">
-            <h3 class="category-title" data-en="Digital Marketing" data-fr="Marketing Digital">Digital Marketing</h3>
-            <div class="skills-container">
-              <div class="skill-badge" data-en="Content Strategy" data-fr="Stratégie de Contenu">Content Strategy</div>
-              <div class="skill-badge" data-en="Social Media" data-fr="Réseaux Sociaux">Social Media</div>
-              <div class="skill-badge" data-en="Campaign Optimization" data-fr="Optimisation de Campagnes">Campaign Optimization</div>
-              <div class="skill-badge" data-en="Email Marketing" data-fr="Email Marketing">Email Marketing</div>
-            </div>
-          </div>
-          <div class="skills-category">
-            <h3 class="category-title" data-en="Performance &amp; Analytics" data-fr="Performance &amp; Analytique">Performance &amp; Analytics</h3>
-            <div class="skills-container">
-              <div class="skill-badge">Google Analytics</div>
-              <div class="skill-badge" data-en="Website Performance" data-fr="Performance du Site">Website Performance</div>
-              <div class="skill-badge" data-en="User Experience" data-fr="Expérience Utilisateur">User Experience</div>
-              <div class="skill-badge" data-en="Conversion Optimization" data-fr="Optimisation des Conversions">Conversion Optimization</div>
-            </div>
-          </div>
-        </section>
- 
-        <!-- EXPERIENCE -->
-        <section class="section" id="experiences-section">
-          <h2 class="section-title" data-en="Experience" data-fr="Expérience">Experience</h2>
-          <div class="experience-list">
-            <div class="experience-item">
-              <h3 class="experience-title" data-en="SEO &amp; Digital Marketing" data-fr="SEO &amp; Marketing Digital">SEO &amp; Digital Marketing</h3>
-              <p class="experience-company">Digital &amp; Co | Paris, France | Sep 2025 – Present</p>
-              <p class="experience-description" data-en="Contributed to the launch and online growth of the company's new website. Focused on SEO optimization, search visibility, website performance, and digital growth strategies." data-fr="Contribué au lancement et à la croissance en ligne du nouveau site de l'entreprise. Axé sur l'optimisation SEO, la visibilité dans les moteurs de recherche et les stratégies de croissance digitale.">Contributed to the launch and online growth of the company's new website. Focused on SEO optimization, search visibility, website performance, and digital growth strategies.</p>
-              <p class="experience-description" data-en="● Worked on technical SEO and on-page optimization to improve search engine visibility.<br>● Monitored website performance and indexing through Google Search Console and Google Analytics.<br>● Helped improve the overall SEO performance of the new website after its launch.<br>● Participated in digital marketing and online branding strategies." data-fr="● Travaillé sur le SEO technique et l'optimisation on-page.<br>● Suivi des performances via Google Search Console et Google Analytics.<br>● Contribué à l'amélioration globale du SEO du nouveau site.<br>● Participé aux stratégies de marketing digital et de branding en ligne.">● Worked on technical SEO and on-page optimization to improve search engine visibility.<br>● Monitored website performance and indexing through Google Search Console and Google Analytics.<br>● Helped improve the overall SEO performance of the new website after its launch.<br>● Participated in digital marketing and online branding strategies.</p>
-              <div class="experience-tech">
-                <span class="tech-tag">Search Console</span><span class="tech-tag">Keyword Research</span><span class="tech-tag">Technical SEO</span>
-              </div>
-            </div>
-            <div class="experience-item">
-              <h3 class="experience-title" data-en="Freelance SEO Consultant" data-fr="Consultant SEO Freelance">Freelance SEO Consultant</h3>
-              <p class="experience-company">Izacoil | Dubai, UAE | Jan 2025 – Aug 2025</p>
-              <p class="experience-description" data-en="Worked on SEO consulting and digital visibility strategies to improve website performance and online presence. Focused on search optimization, technical SEO recommendations, and website analysis." data-fr="Travaillé sur le consulting SEO et les stratégies de visibilité digitale. Axé sur l'optimisation des recherches, les recommandations SEO techniques et l'analyse des sites web.">Worked on SEO consulting and digital visibility strategies to improve website performance and online presence. Focused on search optimization, technical SEO recommendations, and website analysis.</p>
-              <p class="experience-description" data-en="● Conducted SEO audits and website performance analysis.<br>● Worked on keyword research and on-page SEO improvements.<br>● Analyzed website structure, indexing, and search visibility performance.<br>● Contributed to digital growth and online branding strategies." data-fr="● Réalisé des audits SEO et des analyses de performances.<br>● Travaillé sur la recherche de mots-clés et les améliorations SEO on-page.<br>● Analysé la structure des sites et les performances de visibilité.<br>● Contribué aux stratégies de croissance digitale et de branding.">● Conducted SEO audits and website performance analysis.<br>● Worked on keyword research and on-page SEO improvements.<br>● Analyzed website structure, indexing, and search visibility performance.<br>● Contributed to digital growth and online branding strategies.</p>
-              <div class="experience-tech">
-                <span class="tech-tag">Technical SEO</span><span class="tech-tag">Keyword Research</span><span class="tech-tag">Search Visibility</span><span class="tech-tag">Digital Strategy</span>
-              </div>
-            </div>
-            <div class="experience-item">
-              <h3 class="experience-title" data-en="Freelance Graphic Designer" data-fr="Designer Graphique Freelance">Freelance Graphic Designer</h3>
-              <p class="experience-company">Freelance | Jan 2024 – Dec 2024</p>
-              <p class="experience-description" data-en="Worked on graphic design and visual content creation using Adobe Photoshop for companies and digital brands." data-fr="Travaillé sur le design graphique et la création de contenu visuel avec Adobe Photoshop pour des entreprises et des marques digitales.">Worked on graphic design and visual content creation using Adobe Photoshop for companies and digital brands.</p>
-              <p class="experience-description" data-en="● Designed promotional visuals, banners, and marketing content for companies.<br>● Worked on visual identity, content presentation, and creative layouts." data-fr="● Conçu des visuels promotionnels, des bannières et du contenu marketing.<br>● Travaillé sur l'identité visuelle, la présentation de contenu et les mises en page créatives.">● Designed promotional visuals, banners, and marketing content for companies.<br>● Worked on visual identity, content presentation, and creative layouts.</p>
-              <div class="experience-tech">
-                <span class="tech-tag">Photoshop</span><span class="tech-tag">Graphic Design</span><span class="tech-tag">Social Media Design</span>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-    </div>
- 
-    <footer><p>2026 MOBIN MIR</p></footer>
-  </div>
- 
-  <script>
-  // ── DARK MODE ──
+<script>
+(() => {
+  const key = 'yasaman-portfolio-theme';
   const root = document.documentElement;
-  const saved = localStorage.getItem('theme');
-  if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    root.classList.add('dark');
-  }
-  function syncThemeIcons() {
-    const isDark = root.classList.contains('dark');
-    document.querySelectorAll('.theme-toggle').forEach(btn => {
-      btn.querySelector('i').className = isDark ? 'fas fa-sun' : 'fas fa-moon';
+  let saved = null;
+  try { saved = localStorage.getItem(key); } catch(e) {}
+  const initial = saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  root.dataset.theme = initial;
+  function setup(){
+    const button = document.querySelector('.theme-toggle');
+    if(!button) return;
+    const update = () => {
+      const dark = root.dataset.theme === 'dark';
+      button.innerHTML = dark ? '☼ <span>Light mode</span>' : '◐ <span>Dark mode</span>';
+      button.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+      button.setAttribute('aria-pressed', String(dark));
+    };
+    update();
+    button.addEventListener('click', () => {
+      root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+      try { localStorage.setItem(key, root.dataset.theme); } catch(e) {}
+      update();
     });
   }
-  function toggleTheme() {
-    const isDark = root.classList.toggle('dark');
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    syncThemeIcons();
-  }
-  syncThemeIcons();
-  document.getElementById('theme-toggle-mobile').addEventListener('click', toggleTheme);
-  document.getElementById('theme-toggle-desktop').addEventListener('click', toggleTheme);
- 
-  // ── LANGUAGE TOGGLE ──
-  let currentLang = localStorage.getItem('lang') || 'en';
-  function applyLang(lang) {
-    currentLang = lang;
-    localStorage.setItem('lang', lang);
-    document.querySelectorAll('[data-en]').forEach(el => {
-      const text = el.getAttribute('data-' + lang);
-      if (text !== null) el.innerHTML = text;
-    });
-    // sync mobile header subtitle manually (not data-en element)
-    const mSub = document.getElementById('mobile-subtitle');
-    if (mSub) {
-      mSub.innerHTML = lang === 'fr'
-        ? 'Marketing Digital | SEO &amp; Développeur Web WordPress'
-        : 'Digital Marketing | SEO &amp; WordPress Web Developer';
-    }
-    const nextLang = lang === 'en' ? 'FR' : 'EN';
-    document.querySelectorAll('.lang-toggle').forEach(btn => { btn.textContent = nextLang; });
-    document.documentElement.lang = lang;
-  }
-  function toggleLang() { applyLang(currentLang === 'en' ? 'fr' : 'en'); }
-  document.getElementById('lang-toggle-mobile').addEventListener('click', toggleLang);
-  document.getElementById('lang-toggle-desktop').addEventListener('click', toggleLang);
-  applyLang(currentLang);
- 
-  // ── STICKY HEADER (desktop only) ──
-  const header = document.querySelector('header');
-  const controlsDesktop = document.getElementById('controls-desktop');
-  if (header) {
-    let ticking = false, isSticky = false;
-    function updateHeader() {
-      const scrollY = window.scrollY;
-      if (!isSticky && scrollY > 80) {
-        isSticky = true;
-        header.classList.add('sticky');
-        if (controlsDesktop) controlsDesktop.classList.add('sticky');
-      } else if (isSticky && scrollY < 60) {
-        isSticky = false;
-        header.classList.remove('sticky');
-        if (controlsDesktop) controlsDesktop.classList.remove('sticky');
-      }
-      const sidebarContainer = document.querySelector('.sidebar-container');
-      if (sidebarContainer && window.innerWidth >= 768) {
-        sidebarContainer.style.top = isSticky ? '90px' : '20px';
-      }
-      ticking = false;
-    }
-    window.addEventListener('scroll', () => {
-      if (!ticking) { requestAnimationFrame(updateHeader); ticking = true; }
-    }, { passive: true });
-  }
- 
-  // ── NAV ACTIVE STATE ──
-  const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('.nav-link');
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        navLinks.forEach(link => {
-          link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
-        });
-      }
-    });
-  }, { threshold: 0.3 });
-  sections.forEach(s => observer.observe(s));
- 
-  // ── CAROUSEL (desktop) ──
-  function initCarousel() {
-    if (window.innerWidth < 768) return;
-    const slides = document.querySelectorAll('.carousel-slide');
-    const indicatorsContainer = document.getElementById('carousel-indicators');
-    const counter = document.getElementById('carousel-counter');
-    if (!slides.length || !indicatorsContainer) return;
-    let current = 0;
-    indicatorsContainer.innerHTML = '';
-    slides.forEach((_, i) => {
-      const btn = document.createElement('button');
-      btn.className = 'carousel-indicator' + (i === 0 ? ' active' : '');
-      btn.setAttribute('aria-label', 'Slide ' + (i + 1));
-      btn.addEventListener('click', () => goTo(i));
-      indicatorsContainer.appendChild(btn);
-    });
-    function updateCounter() { if (counter) counter.textContent = (current + 1) + ' / ' + slides.length; }
-    function goTo(idx) {
-      slides[current].classList.remove('active');
-      document.querySelectorAll('.carousel-indicator')[current].classList.remove('active');
-      current = idx;
-      slides[current].classList.add('active');
-      document.querySelectorAll('.carousel-indicator')[current].classList.add('active');
-      updateCounter();
-    }
-    updateCounter();
-  }
-  initCarousel();
-  window.addEventListener('resize', initCarousel);
- 
-  // ── 3D CARD TILT ──
-  document.querySelectorAll('.project-card').forEach(card => {
-    card.addEventListener('mousemove', e => {
-      const rect = card.getBoundingClientRect();
-      const x = e.clientX - rect.left, y = e.clientY - rect.top;
-      const cx = rect.width / 2, cy = rect.height / 2;
-      const rotY = ((x - cx) / cx) * 8, rotX = -((y - cy) / cy) * 8;
-      card.style.transform = `perspective(800px) rotateX(${rotX}deg) rotateY(${rotY}deg) scale(1.02)`;
-      const img = card.querySelector('.project-image');
-      const chip = card.querySelector('.project-title-chip');
-      if (img) img.style.transform = `translateX(${rotY * 1.5}px) translateY(${rotX * -1.5}px) scale(1.05)`;
-      if (chip) chip.style.transform = `translateZ(30px) translateX(${rotY * -2}px) translateY(${rotX * 2}px)`;
-    });
-    card.addEventListener('mouseleave', () => {
-      card.style.transform = '';
-      const img = card.querySelector('.project-image');
-      const chip = card.querySelector('.project-title-chip');
-      if (img) img.style.transform = '';
-      if (chip) chip.style.transform = '';
-    });
-  });
- 
-  // ── PROFILE SHINE ──
-  const profileWrapper = document.querySelector('.profile-photo-wrapper');
-  const shine = document.querySelector('.shine');
-  const oppShine = document.querySelector('.opposite-shine');
-  if (profileWrapper && shine) {
-    document.addEventListener('mousemove', e => {
-      const rect = profileWrapper.getBoundingClientRect();
-      const cx = rect.left + rect.width / 2, cy = rect.top + rect.height / 2;
-      const dx = e.clientX - cx, dy = e.clientY - cy;
-      const dist = Math.sqrt(dx * dx + dy * dy);
-      const opacity = Math.max(0, 1 - dist / 400) * 0.6;
-      const pctX = ((e.clientX - rect.left) / rect.width) * 100;
-      const pctY = ((e.clientY - rect.top) / rect.height) * 100;
-      shine.style.background = `radial-gradient(circle at ${pctX}% ${pctY}%, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.2) 30%, transparent 60%)`;
-      shine.style.opacity = opacity;
-      if (oppShine) {
-        oppShine.style.background = `radial-gradient(circle at ${100 - pctX}% ${100 - pctY}%, rgba(139,92,246,0.15) 0%, rgba(79,70,229,0.1) 40%, transparent 70%)`;
-        oppShine.style.opacity = opacity * 0.7;
-      }
-    });
-  }
- 
-  // ── MEMOJI TRACKING ──
-  (function() {
-    const memojiOverlay = document.getElementById('memoji-overlay');
-    const profileWrap = document.getElementById('profile-wrapper');
-    if (!memojiOverlay || !profileWrap) return;
-    const MAX_SHIFT = 12;
-    let active = false, targetX = 0, targetY = 0, currentX = 0, currentY = 0;
-    function lerp(a, b, t) { return a + (b - a) * t; }
-    function animate() {
-      currentX = lerp(currentX, targetX, 0.08);
-      currentY = lerp(currentY, targetY, 0.08);
-      memojiOverlay.style.backgroundPosition = `${50 + currentX}% ${20 + currentY}%`;
-      requestAnimationFrame(animate);
-    }
-    document.addEventListener('mousemove', e => {
-      const rect = profileWrap.getBoundingClientRect();
-      const centerX = rect.left + rect.width / 2, centerY = rect.top + rect.height / 2;
-      const nx = Math.max(-1, Math.min(1, (e.clientX - centerX) / (window.innerWidth / 2)));
-      const ny = Math.max(-1, Math.min(1, (e.clientY - centerY) / (window.innerHeight / 2)));
-      targetX = nx * MAX_SHIFT; targetY = ny * MAX_SHIFT;
-      const dist = Math.sqrt(Math.pow(e.clientX - centerX, 2) + Math.pow(e.clientY - centerY, 2));
-      const maxDist = Math.min(window.innerWidth, window.innerHeight) * 0.6;
-      memojiOverlay.style.opacity = Math.max(0, Math.min(1, 1 - dist / maxDist));
-      if (!active) { active = true; animate(); }
-    });
-    document.addEventListener('mouseleave', () => { memojiOverlay.style.opacity = 0; targetX = 0; targetY = 0; });
-  })();
-  </script>
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', setup);
+  else setup();
+})();
+</script>
+
 </body>
 </html>
